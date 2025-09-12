@@ -1600,6 +1600,13 @@ form.third-contact-form {
 }
 .chair-discount-img img {
     max-width: 100%;
+    padding: 35px;
+}
+
+@media (max-width: 768px) {
+    .chair-discount-img img {
+        padding: 0;
+    }
 }
 .chair-discount-content {
     margin-left: 0;
@@ -1679,9 +1686,16 @@ form.third-contact-form {
 .makes-gaming-chair::after {
     display: none;
 }
+.chair-discount-area .image-offer {
+    overflow: hidden;
+}
+
 .chair-discount-img {
     margin-bottom: 35px;
+    overflow: hidden;
+    
 }
+
 .chair-product-top-content .title,
 .chair-product-price .price {
     font-size: 18px;

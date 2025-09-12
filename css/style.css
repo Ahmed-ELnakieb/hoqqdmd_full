@@ -7312,6 +7312,10 @@ ul.minicart .cart-price .new {
 	overflow: hidden;
 }
 
+.chair-discount-img img {
+	padding: 35px;
+}
+
 .chair-discount-area::before {
 	content: "";
 	position: absolute;
