@@ -165,7 +165,7 @@ function isLoggedIn() {
                                                 <a href="about.php">About</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'games.php' ? 'active' : ''; ?>">
-                                                <a href="#home-four-area-bg">Hacks</a>
+                                                <a href="<?php echo basename($_SERVER['PHP_SELF']) == 'home.php' ? '#home-four-area-bg' : 'shop.php'; ?>">Hacks</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'community.php' ? 'active' : ''; ?>">
                                                 <a href="community.php">Community</a>
