@@ -1,0 +1,5 @@
+# Basic configuration
+DirectoryIndex home.php index.php
+
+# Disable directory browsing
+Options -Indexes
