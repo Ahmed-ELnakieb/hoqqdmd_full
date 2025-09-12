@@ -18,9 +18,36 @@ function isLoggedIn() {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php echo isset($page_title) ? $page_title . ' - Honor of kings hack' : 'Honor of kings hack'; ?></title>
-        <meta name="description" content="<?php echo isset($page_description) ? $page_description : $site_description; ?>">
+        <title>HOQQDMD HOK HACK | Honor of Kings, MLBB, PUBG Game Hacks</title>
+        <meta name="description" content="Get the best HOQQDMD HOK HACK for Honor of Kings, MLBB, PUBG and other popular mobile games. Download premium game cheats, hacks, and mods for Android and iOS devices.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO Meta Tags -->
+        <meta name="keywords" content="HOQQDMD HOK HACK, Honor of Kings hack, MLBB hack, PUBG hack, game cheats, mobile hacks, Android games, iOS games, gaming mods, free hacks, premium hacks">
+        <meta name="author" content="HOQQDMD">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="en">
+        <meta name="revisit-after" content="1 days">
+        <meta name="distribution" content="global">
+
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="HOQQDMD HOK HACK | Honor of Kings, MLBB, PUBG Game Hacks">
+        <meta property="og:description" content="Get the best HOQQDMD HOK HACK for Honor of Kings, MLBB, PUBG and other popular mobile games. Download premium game cheats, hacks, and mods for Android and iOS devices.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://hoqqdmd.com">
+        <meta property="og:image" content="https://hoqqdmd.com/img/logo/h6_logo.png">
+        <meta property="og:site_name" content="HOQQDMD HOK HACK">
+        <meta property="og:locale" content="en_US">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="HOQQDMD HOK HACK | Honor of Kings, MLBB, PUBG Game Hacks">
+        <meta name="twitter:description" content="Get the best HOQQDMD HOK HACK for Honor of Kings, MLBB, PUBG and other popular mobile games.">
+        <meta name="twitter:image" content="https://hoqqdmd.com/img/logo/h6_logo.png">
+
+        <!-- Additional SEO Tags -->
+        <meta name="theme-color" content="#000000">
+        <link rel="canonical" href="https://hoqqdmd.com">
 
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
