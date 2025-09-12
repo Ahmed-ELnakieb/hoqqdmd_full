@@ -224,6 +224,105 @@ $featured_products = [];
 </section>
 <!-- gamers-area-end -->
 
+<!-- home-four-area-bg -->
+<div class="home-four-area-bg">
+    <div class="bg"></div>
+    <!-- latest-games-area -->
+    <section class="latest-games-area home-four-latest-games pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8">
+                    <div class="section-title home-four-title mb-50">
+                        <span>LATEST HACKS</span>
+                        <h2>Premium <span>Gaming Tools</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="latest-games-active owl-carousel">
+                        <div class="latest-games-items mb-30">
+                            <div class="latest-games-thumb">
+                                <a href="#"><img src="img/product/latest_games_thumb01.jpg" alt=""></a>
+                            </div>
+                            <div class="latest-games-content">
+                                <div class="lg-tag">
+                                    <a href="#">HOK</a>
+                                </div>
+                                <h4><a href="#">Honor of Kings <span>Ultimate Pack</span></a></h4>
+                                <p>Price : <span>$64.99</span></p>
+                            </div>
+                        </div>
+                        <div class="latest-games-items mb-30">
+                            <div class="latest-games-thumb">
+                                <a href="#"><img src="img/product/latest_games_thumb02.jpg" alt=""></a>
+                            </div>
+                            <div class="latest-games-content">
+                                <div class="lg-tag">
+                                    <a href="#">MLBB</a>
+                                </div>
+                                <h4><a href="#">Mobile Legends <span>Pro Edition</span></a></h4>
+                                <p>Price : <span>$51.99</span></p>
+                            </div>
+                        </div>
+                        <div class="latest-games-items mb-30">
+                            <div class="latest-games-thumb">
+                                <a href="#"><img src="img/product/latest_games_thumb03.jpg" alt=""></a>
+                            </div>
+                            <div class="latest-games-content">
+                                <div class="lg-tag">
+                                    <a href="#">WR</a>
+                                </div>
+                                <h4><a href="#">Wild Rift <span>Champion Pack</span></a></h4>
+                                <p>Price : <span>$58.49</span></p>
+                            </div>
+                        </div>
+                        <div class="latest-games-items mb-30">
+                            <div class="latest-games-thumb">
+                                <a href="#"><img src="img/product/latest_games_thumb01.jpg" alt=""></a>
+                            </div>
+                            <div class="latest-games-content">
+                                <div class="lg-tag">
+                                    <a href="#">PUBG</a>
+                                </div>
+                                <h4><a href="#">PUBG Mobile <span>Elite Edition</span></a></h4>
+                                <p>Price : <span>$45.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- latest-games-area-end -->
+
+    <!-- live-match-area -->
+    <section class="live-match-area pt-90">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="section-title home-four-title text-center mb-60">
+                        <h2>Watch <span>Hack</span> Tutorials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="live-match-wrap">
+                        <img src="img/images/wukung.png" alt="">
+                        <a href="https://www.youtube.com/watch?v=04KPiGmC7Lc" class="popup-video"><img src="img/icon/video_play_icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- live-match-area-end -->
+
+
+
+</div>
+<!-- home-four-area-bg-end -->
+
 <!-- chair-product-area -->
 <section class="chair-product-area">
     <div class="container">
