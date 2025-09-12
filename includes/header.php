@@ -66,6 +66,24 @@ function isLoggedIn() {
                 cursor: not-allowed;
                 pointer-events: none;
             }
+            .loader-developer {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                font-size: 12px;
+                color: #666;
+                z-index: 10;
+            }
+            .loader-developer a {
+                color: #666;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .loader-developer a:hover {
+                color: #000;
+            }
         </style>
     </head>
     <body>
@@ -75,6 +93,11 @@ function isLoggedIn() {
             <div id="loading-center">
                 <div id="loading-center-absolute">
                     <img src="img/icon/preloader.svg" alt="">
+                </div>
+                <div class="loader-developer">
+                    <a href="mailto:ahmedelnkaieb95@gmail.com" target="_blank">
+                        Developed and designed by Elnakieb
+                    </a>
                 </div>
             </div>
         </div>
