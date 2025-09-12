@@ -79,7 +79,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
     <style>
         /* Modern Gaming Dashboard Styles */
         .page-header__logo_text {
-            color: #c8ff0b !important;
+            color: #00d4ff !important;
             font-weight: bold;
         }
         
@@ -100,7 +100,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             left: -100%;
             width: 100%;
             height: 3px;
-            background: linear-gradient(90deg, transparent, #c8ff0b, transparent);
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
             animation: scan 3s linear infinite;
         }
         @keyframes scan {
@@ -133,7 +133,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             text-align: center;
         }
         .hero-stat-value {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 32px;
             font-weight: bold;
             display: block;
@@ -187,7 +187,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
         }
         .stat-icon i {
             font-size: 24px;
-            color: #c8ff0b;
+            color: #00d4ff;
         }
         .stat-value {
             color: #fff;
@@ -238,7 +238,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             gap: 10px;
         }
         .section-title i {
-            color: #c8ff0b;
+            color: #00d4ff;
         }
         .subscription-grid {
             display: grid;
@@ -255,7 +255,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             overflow: hidden;
         }
         .subscription-card:hover {
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(200, 255, 11, 0.1);
         }
@@ -266,7 +266,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             margin-bottom: 20px;
         }
         .subscription-info h4 {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 20px;
             margin-bottom: 5px;
         }
@@ -303,7 +303,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             letter-spacing: 1px;
         }
         .copy-btn {
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #000;
             border: none;
             padding: 6px 12px;
@@ -314,7 +314,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             transition: all 0.3s;
         }
         .copy-btn:hover {
-            background: #a6d409;
+            background: #0099cc;
             transform: scale(1.05);
         }
         .subscription-footer {
@@ -329,7 +329,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             font-size: 13px;
         }
         .expiry-info span {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-weight: bold;
         }
         
@@ -369,7 +369,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
         }
         .timeline-icon.subscription {
             background: rgba(200, 255, 11, 0.1);
-            color: #c8ff0b;
+            color: #00d4ff;
         }
         .timeline-content {
             flex: 1;
@@ -429,7 +429,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
             margin-bottom: 3px;
         }
         .product-price {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 16px;
             font-weight: bold;
         }
@@ -458,7 +458,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
         }
         .action-btn i {
             font-size: 24px;
-            color: #c8ff0b;
+            color: #00d4ff;
             margin-bottom: 8px;
             display: block;
         }
@@ -489,7 +489,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
         }
         
         .uk-button-danger {
-            background: linear-gradient(135deg, #c8ff0b, #a6d409) !important;
+            background: linear-gradient(135deg, #00d4ff, #0099cc) !important;
             color: #000 !important;
             font-weight: 700;
             border: none;
@@ -621,7 +621,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
                                 <?php endforeach; ?>
                                 <?php if(count($transactions) >= 5): ?>
                                     <div style="text-align: center; margin-top: 15px;">
-                                        <a href="transactions.php" style="color: #c8ff0b;">View All Transactions →</a>
+                                        <a href="transactions.php" style="color: #00d4ff;">View All Transactions →</a>
                                     </div>
                                 <?php endif; ?>
                             <?php else: ?>
@@ -668,7 +668,7 @@ $daysSinceJoined = floor((time() - strtotime($user['created_at'])) / 86400);
                 
                 setTimeout(() => {
                     btn.innerHTML = originalText;
-                    btn.style.background = '#c8ff0b';
+                    btn.style.background = '#00d4ff';
                 }, 2000);
             });
         }

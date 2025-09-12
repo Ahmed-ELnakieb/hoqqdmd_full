@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             border-radius: 10px;
             padding: 40px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            border: 2px solid #c8ff0b;
+            border: 2px solid #00d4ff;
             max-width: 500px;
             width: 100%;
             animation: slideInUp 0.5s ease-out;
@@ -141,7 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         .register-header h2 {
             font-family: 'Oxanium', cursive;
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 32px;
             margin-bottom: 10px;
             text-transform: uppercase;
@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-bottom: 20px;
         }
         .form-group label {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-weight: 600;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -174,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         .form-control:focus {
             background: rgba(0,0,0,0.5);
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
             box-shadow: 0 0 10px rgba(200, 255, 11, 0.3);
             color: #fff;
         }
@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             flex: 1;
         }
         .btn-register {
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #1c1121;
             border: none;
             padding: 12px 30px;
@@ -200,7 +200,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-top: 10px;
         }
         .btn-register:hover {
-            background: #a6d409;
+            background: #0099cc;
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(200, 255, 11, 0.4);
         }
@@ -246,13 +246,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-top: 20px;
         }
         .login-link a {
-            color: #c8ff0b;
+            color: #00d4ff;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
         }
         .login-link a:hover {
-            color: #a6d409;
+            color: #0099cc;
             text-decoration: underline;
         }
         .logo-section {
@@ -289,7 +289,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             cursor: pointer;
         }
         .terms-checkbox a {
-            color: #c8ff0b;
+            color: #00d4ff;
             text-decoration: none;
         }
         .terms-checkbox a:hover {
@@ -302,7 +302,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-bottom: 20px;
         }
         .benefits-list h4 {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 14px;
             margin-bottom: 10px;
             text-transform: uppercase;
@@ -321,7 +321,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         .benefits-list li:before {
             content: "✓";
-            color: #c8ff0b;
+            color: #00d4ff;
             position: absolute;
             left: 0;
         }

@@ -26,7 +26,7 @@ function copyKey(elementId) {
     
     setTimeout(() => {
         button.innerHTML = originalHTML;
-        button.style.background = '#c8ff0b';
+        button.style.background = '#00d4ff';
     }, 2000);
 }
 

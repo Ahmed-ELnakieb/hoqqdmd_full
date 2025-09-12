@@ -73,7 +73,7 @@ foreach ($allPricing as $price) {
         .hero-content h1 {
             font-family: 'Oxanium', cursive;
             font-size: 60px;
-            color: #c8ff0b;
+            color: #00d4ff;
             text-transform: uppercase;
             margin-bottom: 20px;
             text-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -105,11 +105,11 @@ foreach ($allPricing as $price) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #c8ff0b, #a6d409);
+            background: linear-gradient(90deg, #00d4ff, #0099cc);
         }
         .product-card:hover {
             transform: translateY(-5px);
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
             box-shadow: 0 10px 40px rgba(200, 255, 11, 0.2);
         }
         .product-header {
@@ -123,12 +123,12 @@ foreach ($allPricing as $price) {
         }
         .product-title h2 {
             font-family: 'Oxanium', cursive;
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 28px;
             margin-bottom: 10px;
         }
         .product-title .badge {
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #000;
             padding: 5px 15px;
             border-radius: 20px;
@@ -166,7 +166,7 @@ foreach ($allPricing as $price) {
         }
         .features-list li:before {
             content: "✓";
-            color: #c8ff0b;
+            color: #00d4ff;
             position: absolute;
             left: 0;
             font-weight: bold;
@@ -200,19 +200,19 @@ foreach ($allPricing as $price) {
             position: relative;
         }
         .price-box:hover {
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
             transform: scale(1.05);
             box-shadow: 0 5px 20px rgba(200, 255, 11, 0.3);
         }
         .price-box.popular {
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
         }
         .price-box.popular::before {
             content: "POPULAR";
             position: absolute;
             top: -10px;
             right: 10px;
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #000;
             padding: 3px 10px;
             border-radius: 10px;
@@ -226,7 +226,7 @@ foreach ($allPricing as $price) {
             margin-bottom: 10px;
         }
         .price-amount {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 32px;
             font-weight: 700;
             font-family: 'Oxanium', cursive;
@@ -236,7 +236,7 @@ foreach ($allPricing as $price) {
             color: #888;
         }
         .btn-purchase {
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #000;
             border: none;
             padding: 12px 30px;
@@ -248,7 +248,7 @@ foreach ($allPricing as $price) {
             transition: all 0.3s;
         }
         .btn-purchase:hover {
-            background: #a6d409;
+            background: #0099cc;
             transform: translateY(-2px);
         }
         .security-badges {
@@ -265,7 +265,7 @@ foreach ($allPricing as $price) {
         }
         .security-badge i {
             font-size: 32px;
-            color: #c8ff0b;
+            color: #00d4ff;
             margin-bottom: 10px;
         }
         .security-badge p {
@@ -280,7 +280,7 @@ foreach ($allPricing as $price) {
             padding: 30px;
         }
         .comparison-table h3 {
-            color: #c8ff0b;
+            color: #00d4ff;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -291,14 +291,14 @@ foreach ($allPricing as $price) {
         .comparison-table th {
             color: #fff;
             padding: 15px;
-            border-bottom: 2px solid #c8ff0b;
+            border-bottom: 2px solid #00d4ff;
         }
         .comparison-table td {
             padding: 15px;
             border-bottom: 1px solid #333;
         }
         .comparison-table .check {
-            color: #c8ff0b;
+            color: #00d4ff;
             font-size: 20px;
         }
         .comparison-table .times {

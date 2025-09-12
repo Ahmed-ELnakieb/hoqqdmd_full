@@ -94,9 +94,9 @@
                                 <div class="footer-contact-info" style="margin-top: 20px;">
                                     <p style="color: #aaa; font-size: 14px; margin-bottom: 10px;">Get in touch for instant support:</p>
                                     <ul style="list-style: none; padding: 0;">
-                                        <li style="margin-bottom: 8px;"><a href="https://t.me/hoqqdmdhack" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-telegram"></i> @hoqqdmdhack</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="https://chat.whatsapp.com/JYHU6uidE4N3uwgUY1i6Fo" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="https://youtube.com/@hoqqdmd?si=v52Z_8aKJiy-ICiA" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-youtube"></i> @hoqqdmd</a></li>
+                                        <li style="margin-bottom: 8px;"><a href="https://t.me/hoqqdmdhack" target="_blank" style="color: #00d4ff; text-decoration: none;"><i class="fab fa-telegram"></i> @hoqqdmdhack</a></li>
+                                        <li style="margin-bottom: 8px;"><a href="https://chat.whatsapp.com/JYHU6uidE4N3uwgUY1i6Fo" target="_blank" style="color: #00d4ff; text-decoration: none;"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
+                                        <li style="margin-bottom: 8px;"><a href="https://youtube.com/@hoqqdmd?si=v52Z_8aKJiy-ICiA" target="_blank" style="color: #00d4ff; text-decoration: none;"><i class="fab fa-youtube"></i> @hoqqdmd</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -51,7 +51,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <style>
         .page-header__logo_text {
-            color: #c8ff0b !important;
+            color: #00d4ff !important;
             font-weight: bold;
         }
         .subscription-card {
@@ -65,7 +65,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             overflow: hidden;
         }
         .subscription-card:hover {
-            border-color: #c8ff0b;
+            border-color: #00d4ff;
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(200, 255, 11, 0.1);
         }
@@ -76,7 +76,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             left: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #c8ff0b, transparent);
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
             animation: scan 3s linear infinite;
         }
         @keyframes scan {
@@ -90,14 +90,14 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             margin-bottom: 20px;
         }
         .product-info h3 {
-            color: #c8ff0b;
+            color: #00d4ff;
             margin-bottom: 8px;
             font-size: 24px;
         }
         .product-type {
             display: inline-block;
             background: rgba(200, 255, 11, 0.1);
-            color: #c8ff0b;
+            color: #00d4ff;
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 12px;
@@ -147,7 +147,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             letter-spacing: 1px;
         }
         .copy-btn {
-            background: #c8ff0b;
+            background: #00d4ff;
             color: #000;
             border: none;
             padding: 8px 15px;
@@ -157,7 +157,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             transition: all 0.3s;
         }
         .copy-btn:hover {
-            background: #a6d409;
+            background: #0099cc;
             transform: scale(1.05);
         }
         .subscription-details {
@@ -188,14 +188,14 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             flex-wrap: wrap;
         }
         .uk-button-danger {
-            background: #c8ff0b !important;
+            background: #00d4ff !important;
             color: #000 !important;
             font-weight: 700;
             border: none;
             transition: all 0.3s;
         }
         .uk-button-danger:hover {
-            background: #a6d409 !important;
+            background: #0099cc !important;
             transform: translateY(-2px);
         }
         .feature-list {
@@ -211,7 +211,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
         }
         .feature-list li:before {
             content: '✓';
-            color: #c8ff0b;
+            color: #00d4ff;
             position: absolute;
             left: 0;
             font-weight: bold;
@@ -254,7 +254,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             position: relative;
         }
         .tab-btn.active {
-            color: #c8ff0b;
+            color: #00d4ff;
         }
         .tab-btn.active::after {
             content: '';
@@ -263,7 +263,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             left: 0;
             right: 0;
             height: 2px;
-            background: #c8ff0b;
+            background: #00d4ff;
         }
         .tab-btn:hover {
             color: #fff;
@@ -276,14 +276,14 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
             margin-top: 10px;
         }
         .progress-fill {
-            background: linear-gradient(90deg, #c8ff0b, #a6d409);
+            background: linear-gradient(90deg, #00d4ff, #0099cc);
             height: 100%;
             transition: width 0.3s;
         }
         .hwid-info {
             display: inline-block;
             background: rgba(200, 255, 11, 0.1);
-            color: #c8ff0b;
+            color: #00d4ff;
             padding: 4px 10px;
             border-radius: 5px;
             font-size: 12px;
@@ -301,7 +301,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
 
         <div class="uk-container uk-container-large" style="padding-top: 20px;">
             <h2 class="uk-text-lead" style="color: #fff; margin-bottom: 30px;">
-                <i class="fas fa-key" style="color: #c8ff0b;"></i> My Subscriptions
+                <i class="fas fa-key" style="color: #00d4ff;"></i> My Subscriptions
             </h2>
 
             <!-- Tab Navigation -->
@@ -374,7 +374,7 @@ $expiredSubscriptions = array_filter($subscriptions, fn($s) => $s['status'] !== 
                                 </div>
                                 <div class="detail-item">
                                     <div class="detail-label">Days Remaining</div>
-                                    <div class="detail-value" style="color: <?php echo $daysRemaining < 7 ? '#ff6b6b' : '#c8ff0b'; ?>">
+                                    <div class="detail-value" style="color: <?php echo $daysRemaining < 7 ? '#ff6b6b' : '#00d4ff'; ?>">
                                         <?php echo $daysRemaining; ?> days
                                     </div>
                                 </div>

@@ -26,7 +26,7 @@ require_once 'includes/header.php';
 
 .store-hero h1 {
     font-size: 48px;
-    color: #c8ff0b;
+    color: #00d4ff;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -73,14 +73,14 @@ require_once 'includes/header.php';
 }
 
 .product-section-header:hover {
-    border-color: #c8ff0b;
+    border-color: #00d4ff;
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(200, 255, 11, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
 }
 
 .product-section-header.active {
-    border-color: #c8ff0b;
-    box-shadow: 0 5px 15px rgba(200, 255, 11, 0.3);
+    border-color: #00d4ff;
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
 }
 
 .section-title {
@@ -94,12 +94,12 @@ require_once 'includes/header.php';
 }
 
 .section-title i {
-    color: #c8ff0b;
+    color: #00d4ff;
     font-size: 32px;
 }
 
 .section-badge {
-    background: linear-gradient(135deg, #c8ff0b, #a6d409);
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
     color: #000;
     padding: 5px 15px;
     border-radius: 20px;
@@ -110,7 +110,7 @@ require_once 'includes/header.php';
 }
 
 .toggle-icon {
-    color: #c8ff0b;
+    color: #00d4ff;
     font-size: 20px;
     transition: transform 0.3s ease;
 }
@@ -147,8 +147,8 @@ require_once 'includes/header.php';
 
 .product-card:hover {
     transform: translateY(-10px);
-    border-color: #c8ff0b;
-    box-shadow: 0 20px 60px rgba(200, 255, 11, 0.3);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
 }
 
 .product-header {
@@ -158,14 +158,14 @@ require_once 'includes/header.php';
 
 .product-title {
     font-size: 32px;
-    color: #c8ff0b;
+    color: #00d4ff;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .product-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #c8ff0b, #a6d409);
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
     color: #000;
     padding: 8px 20px;
     border-radius: 25px;
@@ -199,12 +199,12 @@ require_once 'includes/header.php';
 }
 
 .feature-item:hover {
-    border-color: #c8ff0b;
-    background: rgba(200, 255, 11, 0.05);
+    border-color: #00d4ff;
+    background: rgba(0, 212, 255, 0.05);
 }
 
 .feature-item i {
-    color: #c8ff0b;
+    color: #00d4ff;
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -254,14 +254,14 @@ require_once 'includes/header.php';
 }
 
 .price-card:hover {
-    border-color: #c8ff0b;
+    border-color: #00d4ff;
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(200, 255, 11, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
 }
 
 .price-card.popular {
-    border-color: #c8ff0b;
-    background: linear-gradient(135deg, rgba(200, 255, 11, 0.1), rgba(31, 32, 41, 0.95));
+    border-color: #00d4ff;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(31, 32, 41, 0.95));
 }
 
 .price-card.popular::before {
@@ -270,7 +270,7 @@ require_once 'includes/header.php';
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #c8ff0b;
+    background: #00d4ff;
     color: #000;
     padding: 5px 20px;
     border-radius: 15px;
@@ -288,7 +288,7 @@ require_once 'includes/header.php';
 
 .price-amount {
     font-size: 36px;
-    color: #c8ff0b;
+    color: #00d4ff;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -316,7 +316,7 @@ require_once 'includes/header.php';
 }
 
 .buy-button {
-    background: linear-gradient(135deg, #c8ff0b, #a6d409);
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
     color: #000;
     border: none;
     padding: 15px 30px;
@@ -333,13 +333,13 @@ require_once 'includes/header.php';
 
 .buy-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(200, 255, 11, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
     color: #000;
     text-decoration: none;
 }
 
 .contact-section {
-    background: linear-gradient(135deg, rgba(200, 255, 11, 0.1), rgba(31, 32, 41, 0.9));
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(31, 32, 41, 0.9));
     border-radius: 15px;
     padding: 40px;
     margin-top: 50px;
@@ -347,7 +347,7 @@ require_once 'includes/header.php';
 }
 
 .contact-title {
-    color: #c8ff0b;
+    color: #00d4ff;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -410,7 +410,7 @@ require_once 'includes/header.php';
 
 .security-badge i {
     font-size: 32px;
-    color: #c8ff0b;
+    color: #00d4ff;
     margin-bottom: 10px;
     display: block;
 }
@@ -579,8 +579,8 @@ require_once 'includes/header.php';
                                 <a href="#" class="buy-button" onclick="openContactModal('drone-update')">Contact for Update</a>
                             </div>
                         </div>
-                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(200, 255, 11, 0.1); border-radius: 10px; border: 1px solid rgba(200, 255, 11, 0.3);">
-                            <p style="color: #c8ff0b; font-weight: 600; margin: 0;">
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(0, 212, 255, 0.1); border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3);">
+                            <p style="color: #00d4ff; font-weight: 600; margin: 0;">
                                 <i class="fas fa-info-circle"></i> 
                                 Pay once initially, then 70% of that amount at each season restart or major game update
                             </p>
@@ -846,7 +846,7 @@ require_once 'includes/header.php';
 <div id="contactModal" class="modal">
     <div class="modal-content">
         <button class="modal-close" onclick="closeContactModal()">&times;</button>
-        <h2 style="color: #c8ff0b; margin-bottom: 20px;">Contact for Purchase</h2>
+        <h2 style="color: #00d4ff; margin-bottom: 20px;">Contact for Purchase</h2>
         <p style="color: #aaa; margin-bottom: 30px;">Choose your preferred contact method to complete your purchase:</p>
         
         <div class="contact-buttons">

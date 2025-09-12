@@ -47,7 +47,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                 </div>
             </div>
             <div class="page-header__action">
-                <span style="color: #c8ff0b; margin-right: 20px;">
+                <span style="color: #00d4ff; margin-right: 20px;">
                     Welcome, <?php echo htmlspecialchars($headerUser['username']); ?>!
                 </span>
                 <a class="action-btn" href="#!">
