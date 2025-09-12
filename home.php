@@ -315,7 +315,7 @@ $featured_products = [];
                 <div class="col-xl-8 col-lg-9">
                     <div class="live-match-wrap">
                         <img src="img/images/wukung.png" alt="">
-                        <a href="https://www.youtube.com/watch?v=7xfvgwnc0Qo" class="popup-video"><img src="img/icon/video_play_icon.png" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=7xfvgwnc0Qo" class="popup-video"><img src="img/icon/v_play.png" style="width: 70px;" alt=""></a>
                     </div>
                 </div>
             </div>
