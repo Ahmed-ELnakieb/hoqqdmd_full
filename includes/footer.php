@@ -36,7 +36,7 @@
                                     <a href="home.php"><img src="img/logo/w_h6_logo.png" alt="" style="width: 120px;"></a>
                                 </div>
                                 <div class="footer-text">
-                                    <p>Your ultimate gaming platform for tournaments, community, and more.</p>
+                                    <p>Your ultimate platform for Android & iOS game hacks, cheats, and premium gaming tools.</p>
                                     <div class="footer-contact">
                                         <ul>
                                             <li><i class="fas fa-headphones"></i> <span>Phone : </span>93 98130-8889</li>
