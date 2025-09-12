@@ -1823,7 +1823,7 @@ ul.minicart .cart-price .new {
 	background-color: rgba(23, 13, 28, 0.929);
 	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.35);
 	width: 100%;
-	padding: 35px 30px;
+	padding: 25px 25px;
 	z-index: 1;
 }
 
@@ -1909,6 +1909,11 @@ ul.minicart .cart-price .new {
 .product-active .slick-arrow:hover,
 .testimonial-active.owl-carousel .owl-nav button:hover {
 	border-color: #e4a101;
+}
+
+.owl-carousel .owl-item img {
+	height: 265px;
+    object-fit: cover;
 }
 
 .home-four-title h2 {
