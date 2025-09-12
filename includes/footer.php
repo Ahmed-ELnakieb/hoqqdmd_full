@@ -82,14 +82,21 @@
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="footer-widget mb-50">
                                 <div class="fw-title mb-35">
-                                    <h5>Follow us</h5>
+                                    <h5>Contact Us</h5>
                                 </div>
                                 <div class="footer-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://t.me/hoqqdmdhack" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a></li>
+                                        <li><a href="https://chat.whatsapp.com/JYHU6uidE4N3uwgUY1i6Fo" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="https://youtube.com/@hoqqdmd?si=v52Z_8aKJiy-ICiA" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-contact-info" style="margin-top: 20px;">
+                                    <p style="color: #aaa; font-size: 14px; margin-bottom: 10px;">Get in touch for instant support:</p>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 8px;"><a href="https://t.me/hoqqdmdhack" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-telegram"></i> @hoqqdmdhack</a></li>
+                                        <li style="margin-bottom: 8px;"><a href="https://chat.whatsapp.com/JYHU6uidE4N3uwgUY1i6Fo" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
+                                        <li style="margin-bottom: 8px;"><a href="https://youtube.com/@hoqqdmd?si=v52Z_8aKJiy-ICiA" target="_blank" style="color: #c8ff0b; text-decoration: none;"><i class="fab fa-youtube"></i> @hoqqdmd</a></li>
                                     </ul>
                                 </div>
                             </div>
