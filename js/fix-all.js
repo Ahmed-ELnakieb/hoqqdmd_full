@@ -15,6 +15,35 @@
     };
     
     $(document).ready(function() {
+        // Fix for scroll errors
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            
+            var target = this.hash;
+            var $target = $(target);
+            
+            try {
+                if (target === '#footer') {
+                    // Scroll to bottom of page for footer
+                    $('html, body').animate({
+                        scrollTop: $(document).height() - $(window).height()
+                    }, 800, 'swing');
+                } else if (target === '#home-four-area-bg') {
+                    // Special handling for home-four-area-bg section
+                    $('html, body').animate({
+                        scrollTop: $target.offset().top - 80
+                    }, 800, 'swing');
+                } else if (target && $target.length) {
+                    // Scroll to specific section
+                    $('html, body').animate({
+                        scrollTop: $target.offset().top - 80
+                    }, 800, 'swing');
+                }
+            } catch (error) {
+                console.error('Scroll error:', error);
+            }
+        });
+        
         // Initialize the home seven slider properly
         if ($('.h-seven-slider-active').length > 0) {
             // First destroy any existing slick instance
@@ -24,7 +53,7 @@
             
             // Re-initialize with proper settings
             $('.h-seven-slider-active').slick({
-                dots: true,
+                dots: false,
                 infinite: true,
                 speed: 500,
                 autoplay: true,
@@ -174,7 +203,7 @@
         setTimeout(function() {
             if ($('.h-seven-slider-active').length > 0 && !$('.h-seven-slider-active').hasClass('slick-initialized')) {
                 $('.h-seven-slider-active').slick({
-                    dots: true,
+                    dots: false,
                     infinite: true,
                     speed: 500,
                     autoplay: true,
