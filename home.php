@@ -120,7 +120,10 @@ $featured_products = [];
         <div class="row gs-category-active">
             <div class="col-3 grid-item">
                 <div class="gs-category-item mb-20">
-                    <div class="thumb"><a href="shop.php?category=hok"><img src="img/categories/hok.jpg" alt=""></a></div>
+                    <div class="thumb">
+                        <div class="thumb-overlay"></div>
+                        <a href="shop.php?category=hok"><img src="img/categories/hok.jpg" alt=""></a>
+                    </div>
                     <div class="content">
                         <h4><a href="shop.php?category=hok">Honor of Kings</a></h4>
                         <a href="shop.php?category=hok" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
@@ -129,7 +132,10 @@ $featured_products = [];
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two green-bg mb-20">
-                    <div class="thumb"><a href="shop.php?category=mlbb"><img src="img/categories/mlbb.jpg" alt=""></a></div>
+                    <div class="thumb">
+                        <div class="thumb-overlay"></div>
+                        <a href="shop.php?category=mlbb"><img src="img/categories/mlbb.jpg" alt=""></a>
+                    </div>
                     <div class="content">
                         <h4><a href="shop.php?category=mlbb">Mobile Legends</a></h4>
                         <a href="shop.php?category=mlbb" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
@@ -138,7 +144,10 @@ $featured_products = [];
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two mb-20">
-                    <div class="thumb"><a href="shop.php?category=wildrift"><img src="img/categories/wildrift.jpg" alt=""></a></div>
+                    <div class="thumb">
+                        <div class="thumb-overlay"></div>
+                        <a href="shop.php?category=wildrift"><img src="img/categories/wildrift.jpg" alt=""></a>
+                    </div>
                     <div class="content">
                         <h4><a href="shop.php?category=wildrift">Wild Rift</a></h4>
                         <a href="shop.php?category=wildrift" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
@@ -147,7 +156,10 @@ $featured_products = [];
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two mb-20">
-                    <div class="thumb"><a href="shop.php?category=pubg"><img src="img/categories/pubg.jpg" alt=""></a></div>
+                    <div class="thumb">
+                        <div class="thumb-overlay"></div>
+                        <a href="shop.php?category=pubg"><img src="img/categories/pubg.jpg" alt=""></a>
+                    </div>
                     <div class="content">
                         <h4><a href="shop.php?category=pubg">PUBG Mobile</a></h4>
                         <a href="shop.php?category=pubg" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>

@@ -7126,6 +7126,7 @@ ul.minicart .cart-price .new {
 	-ms-transform: skewX(-25deg);
 	transform: skewX(-25deg);
 	pointer-events: none;
+	z-index: 3;
 }
 
 .gs-category-item:hover::before {
@@ -7145,8 +7146,24 @@ ul.minicart .cart-price .new {
 	}
 }
 
+.gs-category-item .thumb {
+	position: relative;
+}
+
+.gs-category-item .thumb .thumb-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
 .gs-category-item .thumb img {
 	max-width: 100%;
+	z-index: 0;
+	position: relative;
 }
 
 .gs-category-item.style-two .content {
