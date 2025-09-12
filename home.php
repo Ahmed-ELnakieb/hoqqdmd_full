@@ -18,9 +18,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Honor of Kings <br> <strong>Hacks for <span>Champions</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate advantage with our premium HOK hacking tools and features.</p>
-                            <a href="shop.php?category=hok" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get HOK Hacks</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">PUBG Mobile <br> <strong>Hacks for <span>Survival</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate edge in battle with our professional-grade PUBG Mobile hacking tools.</p>
+                            <a href="shop.php?category=pubg" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get PUBG Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -37,9 +37,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Mobile Legends <br> <strong>Hacks for <span>Victory</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Dominate every match with our advanced MLBB hacking tools and strategic advantages.</p>
-                            <a href="shop.php?category=mlbb" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get MLBB Hacks</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">PUBG Mobile <br> <strong>Season Hack Pack</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Season-exclusive features and tools to dominate the battlefield with updated content.</p>
+                            <a href="shop.php?category=pubg-season" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get Season Pack</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -160,63 +160,54 @@ $featured_products = [];
 <!-- game-shop-category-end -->
 
 <!-- gamers-area -->
-<section class="makes-gaming-chair">
+<section class="just-gamers-area just-gamers-bg pt-115 pb-120">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-xl-5 col-lg-6 col-md-10">
-                <div class="game-shop-title text-left mb-60">
-                    <h2 class="title">Premium Gaming <span>Hacks</span></h2>
-                    <p>Experience the ultimate advantage with our carefully selected premium gaming hacks designed for professional gamers.</p>
+                <div class="section-title title-style-three white-title mb-70">
+                    <h2>PUBG <span>HACKS</span></h2>
+                    <p>Dominate every match with our advanced PUBG Mobile hacking tools and strategic advantages for ultimate victory.</p>
                 </div>
                 <div class="just-gamers-list">
                     <ul>
                         <li>
                             <div class="just-gamers-list-icon">
-                                <img src="img/icon/mgc_icon01.png" alt="">
+                                <img src="img/icon/gamer_list_icon01.png" alt="">
                             </div>
                             <div class="just-gamers-list-content fix">
-                                <h5>Premium Quality</h5>
-                                <p>Built with high-quality materials for durability and comfort</p>
+                                <h5>Aimbot Precision</h5>
+                                <p>Advanced auto-aim with customizable settings for perfect headshots and target tracking</p>
                             </div>
                         </li>
                         <li>
                             <div class="just-gamers-list-icon">
-                                <img src="img/icon/mgc_icon02.png" alt="">
+                                <img src="img/icon/gamer_list_icon02.png" alt="">
                             </div>
                             <div class="just-gamers-list-content fix">
-                                <h5>Professional Grade</h5>
-                                <p>Tested and approved by professional gaming teams worldwide</p>
+                                <h5>Wallhack Vision</h5>
+                                <p>See through walls and obstacles with our advanced ESP features for strategic positioning</p>
                             </div>
                         </li>
                         <li>
                             <div class="just-gamers-list-icon">
-                                <img src="img/icon/mgc_icon03.png" alt="">
+                                <img src="img/icon/gamer_list_icon03.png" alt="">
                             </div>
                             <div class="just-gamers-list-content fix">
-                                <h5>Warranty Support</h5>
-                                <p>Comprehensive warranty and customer support for peace of mind</p>
+                                <h5>No Recoil Control</h5>
+                                <p>Eliminate weapon recoil with our advanced anti-recoil system for perfect accuracy</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-7 col-lg-6 d-none d-lg-block">
-                <div class="gaming-chair-active">
-                    <div class="gaming-chair-wrap">
-                        <img src="img/images/chair.png" alt="" class="main-chair">
-                        <img src="img/images/chair_zoom.png" alt="" class="chair-zoom">
-                        <img src="img/images/chair_chart.png" alt="" class="chair-chart">
+                <div class="just-gamers-img">
+                    <img src="img/images/just_gamers_img.png" alt="" class="just-gamers-character">
+                    <div class="just-gamers-circle-shape">
+                        <img src="img/images/gamers_circle_line.png" alt="">
+                        <img src="img/images/gamers_circle_shape.png" alt="" class="rotateme">
                     </div>
-                    <div class="gaming-chair-wrap">
-                        <img src="img/images/chair02.png" alt="" class="main-chair">
-                        <img src="img/images/chair_zoom02.png" alt="" class="chair-zoom">
-                        <img src="img/images/chair_chart.png" alt="" class="chair-chart">
-                    </div>
-                    <div class="gaming-chair-wrap">
-                        <img src="img/images/chair03.png" alt="" class="main-chair">
-                        <img src="img/images/chair_zoom03.png" alt="" class="chair-zoom">
-                        <img src="img/images/chair_chart.png" alt="" class="chair-chart">
-                    </div>
+                    <img src="img/images/just_gamers_chart.png" alt="" class="gamers-chart-shape">
                 </div>
             </div>
         </div>
@@ -247,9 +238,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">HOK</a>
+                                    <a href="#">PUBG</a>
                                 </div>
-                                <h4><a href="#">Honor of Kings <span>Ultimate Pack</span></a></h4>
+                                <h4><a href="#">PUBG Mobile <span>Complete Pack</span></a></h4>
                                 <p>Price : <span>$64.99</span></p>
                             </div>
                         </div>
@@ -259,9 +250,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">MLBB</a>
+                                    <a href="#">PUBG</a>
                                 </div>
-                                <h4><a href="#">Mobile Legends <span>Pro Edition</span></a></h4>
+                                <h4><a href="#">PUBG Mobile <span>Pro Edition</span></a></h4>
                                 <p>Price : <span>$51.99</span></p>
                             </div>
                         </div>
@@ -271,9 +262,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">WR</a>
+                                    <a href="#">PUBG</a>
                                 </div>
-                                <h4><a href="#">Wild Rift <span>Champion Pack</span></a></h4>
+                                <h4><a href="#">PUBG Mobile <span>Season Pass</span></a></h4>
                                 <p>Price : <span>$58.49</span></p>
                             </div>
                         </div>
