@@ -248,50 +248,50 @@ $featured_products = [];
                     <div class="latest-games-active owl-carousel">
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/product/latest_games_thumb01.jpg" alt=""></a>
+                                <a href="#"><img src="img/perimum-hack/1.jpeg" alt=""></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
                                     <a href="#">HOK</a>
                                 </div>
-                                <h4><a href="#">Honor of Kings <span>Ultimate Pack</span></a></h4>
-                                <p>Price : <span>$64.99</span></p>
+                                <h4><a href="#">Honor of Kings <span>Premium Pack</span></a></h4>
+                                <p>Review : <span>#1</span></p>
                             </div>
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/product/latest_games_thumb02.jpg" alt=""></a>
+                                <a href="#"><img src="img/perimum-hack/2.jpeg" alt=""></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">MLBB</a>
+                                    <a href="#">HOK</a>
                                 </div>
-                                <h4><a href="#">Mobile Legends <span>Pro Edition</span></a></h4>
-                                <p>Price : <span>$51.99</span></p>
+                                <h4><a href="#">Honor of Kings <span>Ultimate Edition</span></a></h4>
+                                <p>Review : <span>#2</span></p>
                             </div>
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/product/latest_games_thumb03.jpg" alt=""></a>
+                                <a href="#"><img src="img/perimum-hack/3.jpeg" alt=""></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">WR</a>
+                                    <a href="#">HOK</a>
                                 </div>
-                                <h4><a href="#">Wild Rift <span>Champion Pack</span></a></h4>
-                                <p>Price : <span>$58.49</span></p>
+                                <h4><a href="#">Honor of Kings <span>Pro Pack</span></a></h4>
+                                <p>Review : <span>#3</span></p>
                             </div>
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/product/latest_games_thumb01.jpg" alt=""></a>
+                                <a href="#"><img src="img/perimum-hack/4.jpeg" alt=""></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">PUBG</a>
+                                    <a href="#">HOK</a>
                                 </div>
-                                <h4><a href="#">PUBG Mobile <span>Elite Edition</span></a></h4>
-                                <p>Price : <span>$45.99</span></p>
+                                <h4><a href="#">Honor of Kings <span>Elite Edition</span></a></h4>
+                                <p>Review : <span>#4</span></p>
                             </div>
                         </div>
                     </div>
