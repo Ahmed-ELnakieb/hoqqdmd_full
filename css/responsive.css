@@ -1446,9 +1446,7 @@ form.third-contact-form {
 
 /* Extra large devices (large desktops, 1800px and up) */
 @media (max-width: 1800px) {
-.h-seven-slider-active .slick-dots {
-    right: 6%;
-}
+
 
 }
 
@@ -1460,9 +1458,7 @@ form.third-contact-form {
 .h-seven-slider-img {
     text-align: left !important;
 }
-.h-seven-slider-active .slick-dots {
-    right: 4%;
-}
+
 .h-seven-slider-content .title {
     font-size: 85px;
 }
