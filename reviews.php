@@ -42,23 +42,24 @@ require_once 'includes/header.php';
                 <div class="review-item">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <div class="reviewer-avatar">
-                                <img src="img/reviewers/user1.jpg" alt="Reviewer">
+                            <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=007bff&color=fff&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="reviewer-details">
                                 <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Alex Johnson</h4>
-                                <div class="rating">
-                                    <i class="fas fa-star" style="color: #ffd700;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                                <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-date" style="background-color: #007bff; color: #fff; padding: 5px 10px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-                            <span style="font-weight: 600;">15</span>
-                            <span style="font-weight: 600;">Dec</span>
+                        <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                            <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
+                            <span>15</span>
+                            <span>Dec</span>
                         </div>
                     </div>
                     <div class="review-content">
@@ -75,21 +76,22 @@ require_once 'includes/header.php';
                 <div class="review-item">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <div class="reviewer-avatar">
-                                <img src="img/reviewers/user2.jpg" alt="Reviewer">
+                            <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Miller&background=28a745&color=fff&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="reviewer-details">
-                                <h4>Sarah Miller</h4>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Sarah Miller</h4>
+                                <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="far fa-star" style="color: #ffd700; font-size: 16px;"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-date">
+                        <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                            <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
                             <span>10</span>
                             <span>Dec</span>
                         </div>
@@ -108,21 +110,22 @@ require_once 'includes/header.php';
                 <div class="review-item">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <div class="reviewer-avatar">
-                                <img src="img/reviewers/user3.jpg" alt="Reviewer">
+                            <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                <img src="https://ui-avatars.com/api/?name=Mike+Chen&background=ffc107&color=000&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="reviewer-details">
-                                <h4>Mike Chen</h4>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Mike Chen</h4>
+                                <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-date">
+                        <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                            <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
                             <span>05</span>
                             <span>Dec</span>
                         </div>
