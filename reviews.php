@@ -218,53 +218,89 @@ $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="row">
             <!-- Rating Item 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #007bff;">
-                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #007bff, #0056b3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(0,123,255,0.3);">
-                        <i class="fas fa-crosshairs" style="color: #fff; font-size: 28px;"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #007bff;">
+                    <div class="rating-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div class="rating-icon" style="width: 50px; height: 50px; background: linear-gradient(135deg, #007bff, #0056b3); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-crosshairs" style="color: #fff; font-size: 20px;"></i>
+                        </div>
+                        <div class="rating-score" style="background: #f8f9fa; border-radius: 8px; padding: 5px 12px; display: inline-block;">
+                            <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.5rem;">4.8</h3>
+                            <div class="rating-stars" style="color: #ffc107; font-size: 14px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
-                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.8/5.0</h3>
-                    </div>
-                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Aimbot</p>
+                    <h4 style="color: #333; font-weight: 600; font-size: 1.1rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Aimbot</h4>
                 </div>
             </div>
 
             <!-- Rating Item 2 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #28a745;">
-                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #28a745, #1e7e34); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(40,167,69,0.3);">
-                        <i class="fas fa-eye" style="color: #fff; font-size: 28px;"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #28a745;">
+                    <div class="rating-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div class="rating-icon" style="width: 50px; height: 50px; background: linear-gradient(135deg, #28a745, #1e7e34); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-eye" style="color: #fff; font-size: 20px;"></i>
+                        </div>
+                        <div class="rating-score" style="background: #f8f9fa; border-radius: 8px; padding: 5px 12px; display: inline-block;">
+                            <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.5rem;">4.9</h3>
+                            <div class="rating-stars" style="color: #ffc107; font-size: 14px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
-                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.9/5.0</h3>
-                    </div>
-                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">ESP Hack</p>
+                    <h4 style="color: #333; font-weight: 600; font-size: 1.1rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">ESP Hack</h4>
                 </div>
             </div>
 
             <!-- Rating Item 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #ffc107;">
-                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #ffc107, #e0a800); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(255,193,7,0.3);">
-                        <i class="fas fa-shield-alt" style="color: #fff; font-size: 28px;"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #ffc107;">
+                    <div class="rating-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div class="rating-icon" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ffc107, #e0a800); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shield-alt" style="color: #fff; font-size: 20px;"></i>
+                        </div>
+                        <div class="rating-score" style="background: #f8f9fa; border-radius: 8px; padding: 5px 12px; display: inline-block;">
+                            <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.5rem;">4.7</h3>
+                            <div class="rating-stars" style="color: #ffc107; font-size: 14px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
-                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.7/5.0</h3>
-                    </div>
-                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Anti-Ban</p>
+                    <h4 style="color: #333; font-weight: 600; font-size: 1.1rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Anti-Ban</h4>
                 </div>
             </div>
 
             <!-- Rating Item 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #dc3545;">
-                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #dc3545, #c82333); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(220,53,69,0.3);">
-                        <i class="fas fa-mobile-alt" style="color: #fff; font-size: 28px;"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #6f42c1;">
+                    <div class="rating-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div class="rating-icon" style="width: 50px; height: 50px; background: linear-gradient(135deg, #6f42c1, #5a32a3); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt" style="color: #fff; font-size: 20px;"></i>
+                        </div>
+                        <div class="rating-score" style="background: #f8f9fa; border-radius: 8px; padding: 5px 12px; display: inline-block;">
+                            <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.5rem;">4.6</h3>
+                            <div class="rating-stars" style="color: #ffc107; font-size: 14px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
-                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.6/5.0</h3>
-                    </div>
-                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Mobile Support</p>
+                    <h4 style="color: #333; font-weight: 600; font-size: 1.1rem; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Mobile Support</h4>
                 </div>
             </div>
         </div>
