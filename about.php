@@ -23,55 +23,164 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- About Content -->
-<section class="about-area pt-120 pb-120">
+<!-- Hack Features Section -->
+<section class="hack-features-area pt-120 pb-120">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-img">
-                    <img src="img/images/wukung.png" alt="Honor of Kings Hack" class="img-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <div class="section-title">
+                    <span class="sub-title">CHEAT HACK HONOR OF KINGS</span>
+                    <h2>Honor of Kings <span>Hack Tools</span></h2>
+                </div>
+                <div class="hack-description mt-4">
+                    <div class="hack-features">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-mobile-alt"></i> Suporta Android 10/15</h4>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-play-circle"></i> GamePlay : <a href="https://youtu.be/bZEsPiz2lW8" target="_blank">https://youtu.be/bZEsPiz2lW8</a></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="row">
             <div class="col-lg-6">
-                <div class="about-content">
-                    <div class="section-title mb-30">
-                        <span class="sub-title">CHEAT HACK HONOR OF KINGS</span>
-                        <h2>Honor of Kings <span>Hack Tools</span></h2>
+                <div class="hack-features-box">
+                    <h3 class="mb-4">Opções:</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-map"></i>
+                            </div>
+                            <h4>MapHack</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>Drone View<br>(Câmera de Deus)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h4>Esp Player<br>(linhas/vida/flash++)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-dragon"></i>
+                            </div>
+                            <h4>Esp Monster</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Show Cooldown<br>(inclue o tempo pra ressurgir de todos os monstros, além das habilidades dos adversários)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Suporta Sem Root<br>(usando Virtual / Container -> em manutenção)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>Suporta Root Mode<br>(SEGURO)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Suporta Kernel Mode<br>(SEGURO)</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Suporta esconder o hack pra gravações</h4>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-file"></i>
+                            </div>
+                            <h4>Honor Of Kings 64Bit Original<br>(versão Apk da web)</h4>
+                        </div>
                     </div>
-                    <p><strong>~ Suporta Android 10/15</strong></p>
-                    <p><strong>~ GamePlay : </strong><a href="https://youtu.be/bZEsPiz2lW8?si=dAwgbs82KP4mgUvT" target="_blank">https://youtu.be/bZEsPiz2lW8</a></p>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="hack-pricing-box">
+                    <h3 class="mb-4">Price List / Lista de preços:</h3>
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>3 Days</h4>
+                            </div>
+                            <div class="pricing-price">
+                                <span>5 USD</span>
+                                <span>30 BRL</span>
+                            </div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>7 Days</h4>
+                            </div>
+                            <div class="pricing-price">
+                                <span>10 USD</span>
+                                <span>65 BRL</span>
+                            </div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>14 Days</h4>
+                            </div>
+                            <div class="pricing-price">
+                                <span>14 USD</span>
+                                <span>100 BRL</span>
+                            </div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>24 Days</h4>
+                            </div>
+                            <div class="pricing-price">
+                                <span>25 USD</span>
+                                <span>150 BRL</span>
+                            </div>
+                        </div>
+                        <div class="pricing-item featured">
+                            <div class="pricing-header">
+                                <h4>31 Days</h4>
+                            </div>
+                            <div class="pricing-price">
+                                <span>30 USD</span>
+                                <span>185 BRL</span>
+                            </div>
+                            <div class="pricing-featured">POPULAR</div>
+                        </div>
+                    </div>
                     
-                    <h3 class="mt-4 mb-3">Opções:</h3>
-                    <ul class="about-list mb-30">
-                        <li><i class="fas fa-check"></i> MapHack</li>
-                        <li><i class="fas fa-check"></i> Drone View (Câmera de Deus)</li>
-                        <li><i class="fas fa-check"></i> Esp Player (linhas/vida/flash++)</li>
-                        <li><i class="fas fa-check"></i> Esp Monster</li>
-                        <li><i class="fas fa-check"></i> Show Cooldown (inclue o tempo pra ressurgir de todos os monstros, além das habilidades dos adversários)</li>
-                        <li><i class="fas fa-check"></i> Suporta Sem Root ( usando Virtual / Container -> em manutenção)</li>
-                        <li><i class="fas fa-check"></i> Suporta Root Mode (SEGURO)</li>
-                        <li><i class="fas fa-check"></i> Suporta Kernel Mode (SEGURO)</li>
-                        <li><i class="fas fa-check"></i> Suporta esconder o hack pra gravações.</li>
-                        <li><i class="fas fa-check"></i> Honor Of Kings 64Bit Original (versão Apk da web)</li>
-                    </ul>
+                    <div class="seller-info mt-5 text-center">
+                        <h3>Vendedor</h3>
+                        <p><a href="https://t.me/hoqqdmd" target="_blank" class="seller-link">@hoqqdmd</a></p>
+                    </div>
                     
-                    <h3 class="mt-4 mb-3">Price List / Lista de preços:</h3>
-                    <ul class="about-list mb-30">
-                        <li><strong>3 Days : 5"USD 🇺🇸 30"BRL 🇧🇷</strong></li>
-                        <li><strong>7 Days : 10"USD 🇺🇸 65"BRL 🇧🇷</strong></li>
-                        <li><strong>14 Days : 14"USD 🇺🇸 100"BRL 🇧🇷</strong></li>
-                        <li><strong>24 Days : 25"USD 🇺🇸 150"BRL 🇧🇷</strong></li>
-                        <li><strong>31 Days : 30"USD 🇺🇸 185"BRL 🇧🇷</strong></li>
-                    </ul>
-                    
-                    <p class="mb-3"><strong>Vendedor : @hoqqdmd</strong></p>
-                    
-                    <div class="mt-4 mb-4">
-                        <h4 class="mb-3">More Videos:</h4>
-                        <ul class="about-list">
-                            <li><a href="https://youtu.be/7xfvgwnc0Qo?si=8zLYLpbniZiLF6zz" target="_blank">https://youtu.be/7xfvgwnc0Qo</a></li>
-                            <li><a href="https://youtu.be/Gh-NhGElB-8?si=EZRmj255DfIEZQgV" target="_blank">https://youtu.be/Gh-NhGElB-8</a></li>
-                        </ul>
+                    <div class="more-videos mt-5">
+                        <h3>More Videos:</h3>
+                        <div class="video-links">
+                            <a href="https://youtu.be/7xfvgwnc0Qo" target="_blank" class="video-link">
+                                <i class="fab fa-youtube"></i> https://youtu.be/7xfvgwnc0Qo
+                            </a>
+                            <a href="https://youtu.be/Gh-NhGElB-8" target="_blank" class="video-link">
+                                <i class="fab fa-youtube"></i> https://youtu.be/Gh-NhGElB-8
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,6 +300,227 @@ require_once 'includes/header.php';
 .stat-item p {
     font-size: 18px;
     color: #666;
+}
+
+/* Hack Features Section */
+.hack-features-area {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+.hack-features-area .section-title .sub-title {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+.hack-features-area .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+.hack-features-area .section-title h2 span {
+    color: #e74c3c;
+}
+
+/* Section headings */
+.hack-features-box h3, .hack-pricing-box h3, .more-videos h3 {
+    color: #000 !important;
+    font-weight: 700;
+}
+.seller-info h3 {
+    color: #000 !important;
+    font-weight: 700;
+}
+.hack-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.feature-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.feature-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.feature-item i {
+    color: #e74c3c;
+    margin-right: 10px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+.feature-icon i {
+    color: #fff;
+    font-size: 24px;
+}
+.feature-card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Pricing Table */
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.pricing-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+.pricing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.pricing-item.featured {
+    border: 2px solid #e74c3c;
+}
+.pricing-featured {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.pricing-header h4 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+.pricing-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pricing-price span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.pricing-price span:first-child {
+    color: #667eea;
+}
+.pricing-price span:last-child {
+    color: #666;
+}
+
+/* Seller Info */
+.seller-info {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.seller-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+.seller-link {
+    color: #e74c3c;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+.seller-link:hover {
+    text-decoration: underline;
+}
+
+/* More Videos */
+.more-videos {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.more-videos h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+.video-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.video-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.video-link:hover {
+    background-color: #f8f9fa;
+    color: #e74c3c;
+}
+.video-link i {
+    margin-right: 10px;
+    color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .hack-features {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .contact-area .section-title .sub-title {
     color: #667eea;
