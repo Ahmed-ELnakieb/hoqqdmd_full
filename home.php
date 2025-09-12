@@ -18,9 +18,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Gaming Gear <br> <strong>for <span>Champions</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Elevate your gaming experience with our premium collection of gaming equipment.</p>
-                            <a href="shop.php" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Shop Now</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Honor of Kings <br> <strong>Hacks for <span>Champions</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate advantage with our premium HOK hacking tools and features.</p>
+                            <a href="shop.php?category=hok" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get HOK Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -37,9 +37,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Join Tournaments <br> <strong>Win <span>Prizes</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Compete with players worldwide and showcase your skills in epic gaming tournaments.</p>
-                            <a href="tournaments.php" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">View Tournaments</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Mobile Legends <br> <strong>Hacks for <span>Victory</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Dominate every match with our advanced MLBB hacking tools and strategic advantages.</p>
+                            <a href="shop.php?category=mlbb" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get MLBB Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -56,9 +56,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Gaming Community <br> <strong>Connect & <span>Play</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Join our vibrant gaming community and connect with players from around the world.</p>
-                            <a href="community.php" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Join Community</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">PUBG Mobile <br> <strong>Hacks for <span>Survival</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate edge in battle with our professional-grade PUBG Mobile hacking tools.</p>
+                            <a href="shop.php?category=pubg" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get PUBG Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -118,48 +118,39 @@ $featured_products = [];
             </div>
         </div>
         <div class="row gs-category-active">
-            <div class="col-5 grid-item">
+            <div class="col-3 grid-item">
                 <div class="gs-category-item mb-20">
-                    <div class="thumb"><a href="shop.php?category=chairs"><img src="img/product/gs_popular_item01.jpg" alt=""></a></div>
+                    <div class="thumb"><a href="shop.php?category=hok"><img src="img/product/gs_popular_item01.jpg" alt=""></a></div>
                     <div class="content">
-                        <h4><a href="shop.php?category=chairs">Gaming Chairs</a></h4>
-                        <a href="shop.php?category=chairs" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
+                        <h4><a href="shop.php?category=hok">Honor of Kings</a></h4>
+                        <a href="shop.php?category=hok" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two green-bg mb-20">
-                    <div class="thumb"><a href="shop.php?category=headphones"><img src="img/product/gs_popular_item02.jpg" alt=""></a></div>
+                    <div class="thumb"><a href="shop.php?category=mlbb"><img src="img/product/gs_popular_item02.jpg" alt=""></a></div>
                     <div class="content">
-                        <h4><a href="shop.php?category=headphones">Game Headphones</a></h4>
-                        <a href="shop.php?category=headphones" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
+                        <h4><a href="shop.php?category=mlbb">Mobile Legends</a></h4>
+                        <a href="shop.php?category=mlbb" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two mb-20">
-                    <div class="thumb"><a href="shop.php?category=graphics"><img src="img/product/gs_popular_item03.jpg" alt=""></a></div>
+                    <div class="thumb"><a href="shop.php?category=wildrift"><img src="img/product/gs_popular_item03.jpg" alt=""></a></div>
                     <div class="content">
-                        <h4><a href="shop.php?category=graphics">Graphics Cards</a></h4>
-                        <a href="shop.php?category=graphics" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
+                        <h4><a href="shop.php?category=wildrift">Wild Rift</a></h4>
+                        <a href="shop.php?category=wildrift" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-3 grid-item">
                 <div class="gs-category-item style-two mb-20">
-                    <div class="thumb"><a href="shop.php?category=keyboards"><img src="img/product/gs_popular_item04.jpg" alt=""></a></div>
+                    <div class="thumb"><a href="shop.php?category=pubg"><img src="img/product/gs_popular_item04.jpg" alt=""></a></div>
                     <div class="content">
-                        <h4><a href="shop.php?category=keyboards">Gaming Keyboards</a></h4>
-                        <a href="shop.php?category=keyboards" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 grid-item">
-                <div class="gs-category-item style-two mb-20">
-                    <div class="thumb"><a href="shop.php?category=accessories"><img src="img/product/gs_popular_item05.jpg" alt=""></a></div>
-                    <div class="content">
-                        <h4><a href="shop.php?category=accessories">Accessories</a></h4>
-                        <a href="shop.php?category=accessories" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
+                        <h4><a href="shop.php?category=pubg">PUBG Mobile</a></h4>
+                        <a href="shop.php?category=pubg" class="shop-link">Shop Now <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -174,8 +165,8 @@ $featured_products = [];
         <div class="row align-items-center">
             <div class="col-xl-5 col-lg-6 col-md-10">
                 <div class="game-shop-title text-left mb-60">
-                    <h2 class="title">Premium Gaming <span>Equipment</span></h2>
-                    <p>Experience the ultimate gaming setup with our carefully selected premium equipment designed for professional gamers.</p>
+                    <h2 class="title">Premium Gaming <span>Hacks</span></h2>
+                    <p>Experience the ultimate advantage with our carefully selected premium gaming hacks designed for professional gamers.</p>
                 </div>
                 <div class="just-gamers-list">
                     <ul>
@@ -244,126 +235,96 @@ $featured_products = [];
             </div>
         </div>
         <div class="row justify-content-center">
-            <?php if(count($featured_products) > 0): ?>
-                <?php foreach($featured_products as $product): ?>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="chair-product-item mb-60">
-                        <div class="chair-product-thumb">
-                            <img src="<?php echo $product['image'] ?? 'img/product/gaming_chair01.jpg'; ?>" alt="">
-                            <a href="add-to-cart.php?id=<?php echo $product['id']; ?>" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="chair-product-item mb-60">
+                    <div class="chair-product-thumb">
+                        <img src="img/product/gaming_chair01.jpg" alt="">
+                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                    <div class="chair-product-content">
+                        <div class="chair-product-top-content">
+                            <div class="main-content">
+                                <span class="category">HOK Hack Tools</span>
+                                <h5 class="title"><a href="#">Honor of Kings Ultimate Pack</a></h5>
+                            </div>
+                            <div class="chair-product-price">
+                                <h5 class="price">$64.99</h5>
+                                <span class="special-offer">Special Offer 35% Off</span>
+                            </div>
                         </div>
-                        <div class="chair-product-content">
-                            <div class="chair-product-top-content">
-                                <div class="main-content">
-                                    <span class="category"><?php echo $product['category'] ?? 'Gaming Gear'; ?></span>
-                                    <h5 class="title"><a href="product.php?id=<?php echo $product['id']; ?>"><?php echo $product['name'] ?? 'Premium Gaming Chair'; ?></a></h5>
-                                </div>
-                                <div class="chair-product-price">
-                                    <h5 class="price">$<?php echo $product['price'] ?? '49.00'; ?></h5>
-                                </div>
+                        <div class="chair-product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="chair-product-bottom">
-                                <div class="rating">
-                                    <?php for($i = 0; $i < 5; $i++): ?>
-                                    <i class="far fa-star"></i>
-                                    <?php endfor; ?>
-                                </div>
-                                <a href="add-to-wishlist.php?id=<?php echo $product['id']; ?>" class="heart"><i class="far fa-heart"></i></a>
-                            </div>
+                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <!-- Default products if database is not set up -->
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="chair-product-item mb-60">
-                        <div class="chair-product-thumb">
-                            <img src="img/product/gaming_chair01.jpg" alt="">
-                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="chair-product-item mb-60">
+                    <div class="chair-product-thumb">
+                        <img src="img/product/gaming_chair02.jpg" alt="">
+                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                    <div class="chair-product-content">
+                        <div class="chair-product-top-content">
+                            <div class="main-content">
+                                <span class="category">MLBB Hack Tools</span>
+                                <h5 class="title"><a href="#">Mobile Legends Pro Edition</a></h5>
+                            </div>
+                            <div class="chair-product-price">
+                                <h5 class="price">$51.99</h5>
+                                <span class="special-offer">Special Offer 35% Off</span>
+                            </div>
                         </div>
-                        <div class="chair-product-content">
-                            <div class="chair-product-top-content">
-                                <div class="main-content">
-                                    <span class="category">Gaming Chair</span>
-                                    <h5 class="title"><a href="#">STEEL FRAME CHAIR</a></h5>
-                                </div>
-                                <div class="chair-product-price">
-                                    <h5 class="price">$49.00</h5>
-                                </div>
+                        <div class="chair-product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="chair-product-bottom">
-                                <div class="rating">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                            </div>
+                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="chair-product-item mb-60">
-                        <div class="chair-product-thumb">
-                            <img src="img/product/gaming_chair02.jpg" alt="">
-                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="chair-product-item mb-60">
+                    <div class="chair-product-thumb">
+                        <img src="img/product/gaming_chair03.jpg" alt="">
+                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                    <div class="chair-product-content">
+                        <div class="chair-product-top-content">
+                            <div class="main-content">
+                                <span class="category">Wild Rift Hack Tools</span>
+                                <h5 class="title"><a href="#">Wild Rift Champion Pack</a></h5>
+                            </div>
+                            <div class="chair-product-price">
+                                <h5 class="price">$58.49</h5>
+                                <span class="special-offer">Special Offer 35% Off</span>
+                            </div>
                         </div>
-                        <div class="chair-product-content">
-                            <div class="chair-product-top-content">
-                                <div class="main-content">
-                                    <span class="category">Gaming Chair</span>
-                                    <h5 class="title"><a href="#">DELUX DC-R103</a></h5>
-                                </div>
-                                <div class="chair-product-price">
-                                    <h5 class="price">$29.00</h5>
-                                </div>
+                        <div class="chair-product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="chair-product-bottom">
-                                <div class="rating">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                            </div>
+                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="chair-product-item mb-60">
-                        <div class="chair-product-thumb">
-                            <img src="img/product/gaming_chair03.jpg" alt="">
-                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
-                        </div>
-                        <div class="chair-product-content">
-                            <div class="chair-product-top-content">
-                                <div class="main-content">
-                                    <span class="category">Accessories</span>
-                                    <h5 class="title"><a href="#">Gaming Headset Pro</a></h5>
-                                </div>
-                                <div class="chair-product-price">
-                                    <h5 class="price">$39.00</h5>
-                                </div>
-                            </div>
-                            <div class="chair-product-bottom">
-                                <div class="rating">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>
@@ -382,8 +343,9 @@ $featured_products = [];
                 <div class="chair-discount-content">
                     <div class="game-shop-title mb-25">
                         <h2 class="title">Special <br> Offer 35% Off</h2>
+                        <p class="offer-description">The best deal in our hacks! Get premium gaming tools for Honor of Kings, Mobile Legends, Wild Rift, and PUBG at an unbeatable price.</p>
                     </div>
-                    <p>Limited time offer on selected gaming equipment. Don't miss out!</p>
+                    <p>Our special offer includes access to all premium features, regular updates, and 24/7 customer support. Limited time only!</p>
                     <a href="shop.php?sale=true" class="btn">Shop Sale</a>
                 </div>
             </div>

@@ -18,7 +18,7 @@ function isLoggedIn() {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php echo isset($page_title) ? $page_title . ' - ' . $site_name : $site_name; ?></title>
+        <title><?php echo isset($page_title) ? $page_title . ' - Honor of kings hack' : 'Honor of kings hack'; ?></title>
         <meta name="description" content="<?php echo isset($page_description) ? $page_description : $site_description; ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
