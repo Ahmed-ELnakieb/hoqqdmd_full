@@ -18,9 +18,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">PUBG Mobile <br> <strong>Hacks for <span>Survival</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate edge in battle with our professional-grade PUBG Mobile hacking tools.</p>
-                            <a href="shop.php?category=pubg" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get PUBG Hacks</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Honor of Kings <br> <strong>Hacks for <span>Champions</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Get the ultimate advantage with our premium HOK hacking tools and features.</p>
+                            <a href="shop.php?category=hok" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get HOK Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -37,9 +37,9 @@ $featured_products = [];
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="h-seven-slider-content">
-                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">PUBG Mobile <br> <strong>Season Hack Pack</span></strong></h2>
-                            <p data-animation-in="fadeInUp" data-delay-in=".4">Season-exclusive features and tools to dominate the battlefield with updated content.</p>
-                            <a href="shop.php?category=pubg-season" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get Season Pack</a>
+                            <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".2">Mobile Legends <br> <strong>Hacks for <span>Victory</span></strong></h2>
+                            <p data-animation-in="fadeInUp" data-delay-in=".4">Dominate every match with our advanced MLBB hacking tools and strategic advantages.</p>
+                            <a href="shop.php?category=mlbb" class="btn rotated-btn" data-animation-in="fadeInUp" data-delay-in=".6">Get MLBB Hacks</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -238,9 +238,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">PUBG</a>
+                                    <a href="#">HOK</a>
                                 </div>
-                                <h4><a href="#">PUBG Mobile <span>Complete Pack</span></a></h4>
+                                <h4><a href="#">Honor of Kings <span>Ultimate Pack</span></a></h4>
                                 <p>Price : <span>$64.99</span></p>
                             </div>
                         </div>
@@ -250,9 +250,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">PUBG</a>
+                                    <a href="#">MLBB</a>
                                 </div>
-                                <h4><a href="#">PUBG Mobile <span>Pro Edition</span></a></h4>
+                                <h4><a href="#">Mobile Legends <span>Pro Edition</span></a></h4>
                                 <p>Price : <span>$51.99</span></p>
                             </div>
                         </div>
@@ -262,9 +262,9 @@ $featured_products = [];
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
-                                    <a href="#">PUBG</a>
+                                    <a href="#">WR</a>
                                 </div>
-                                <h4><a href="#">PUBG Mobile <span>Season Pass</span></a></h4>
+                                <h4><a href="#">Wild Rift <span>Champion Pack</span></a></h4>
                                 <p>Price : <span>$58.49</span></p>
                             </div>
                         </div>
