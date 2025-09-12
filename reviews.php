@@ -49,6 +49,61 @@ $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </section>
 
+<!-- Write Review Modal -->
+<div class="modal fade" id="writeReviewModal" tabindex="-1" aria-labelledby="writeReviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border-radius: 15px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #007bff, #0056b3); padding: 20px 25px; border-bottom: none;">
+                <h5 class="modal-title" id="writeReviewModalLabel" style="color: #fff; font-weight: 700; font-size: 1.5rem; margin: 0;">Write Your Review</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="padding: 30px;">
+                <form id="reviewForm" action="submit-review.php" method="post">
+                    <div class="mb-4">
+                        <label for="reviewer_name" class="form-label" style="color: #333; font-weight: 600; margin-bottom: 10px; display: block;">Your Name</label>
+                        <input type="text" id="reviewer_name" name="reviewer_name" class="form-control" style="border: 1px solid #ddd; border-radius: 8px; padding: 12px 15px; font-size: 16px;" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="product_name" class="form-label" style="color: #333; font-weight: 600; margin-bottom: 10px; display: block;">Product</label>
+                        <select id="product_name" name="product_name" class="form-select" style="border: 1px solid #ddd; border-radius: 8px; padding: 12px 15px; font-size: 16px;" required>
+                            <option value="">Select a product</option>
+                            <option value="Honor of Kings Pro Hack">Honor of Kings Pro Hack</option>
+                            <option value="Honor of Kings ESP Hack">Honor of Kings ESP Hack</option>
+                            <option value="Honor of Kings Aimbot">Honor of Kings Aimbot</option>
+                            <option value="Honor of Kings Anti-Ban">Honor of Kings Anti-Ban</option>
+                            <option value="Honor of Kings Mobile Support">Honor of Kings Mobile Support</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label" style="color: #333; font-weight: 600; margin-bottom: 10px; display: block;">Rating</label>
+                        <div class="rating-input" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <?php for ($i = 5; $i >= 1; $i--): ?>
+                            <label class="rating-star" style="cursor: pointer;">
+                                <input type="radio" name="rating" value="<?php echo $i; ?>" <?php echo $i == 5 ? 'checked' : ''; ?> style="display: none;">
+                                <i class="far fa-star rating-icon" style="font-size: 30px; color: #ddd; transition: color 0.3s;" data-rating="<?php echo $i; ?>"></i>
+                            </label>
+                            <?php endfor; ?>
+                        </div>
+                        <div class="rating-text" style="font-size: 16px; color: #666; margin-top: 10px;">Excellent</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="review_text" class="form-label" style="color: #333; font-weight: 600; margin-bottom: 10px; display: block;">Your Review</label>
+                        <textarea id="review_text" name="review_text" class="form-control" rows="6" style="border: 1px solid #ddd; border-radius: 8px; padding: 12px 15px; font-size: 16px;" required></textarea>
+                        <div class="char-count" style="text-align: right; font-size: 14px; color: #666; margin-top: 5px;">0 characters</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="padding: 20px 25px; border-top: none;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background: #6c757d; border: none; color: #fff; font-weight: 600; padding: 10px 25px; border-radius: 30px; font-size: 16px;">Cancel</button>
+                <button type="submit" form="reviewForm" class="btn btn-primary" style="background: linear-gradient(135deg, #007bff, #0056b3); border: none; color: #fff; font-weight: 600; padding: 10px 25px; border-radius: 30px; font-size: 16px; box-shadow: 0 4px 15px rgba(0,123,255,0.3);">Submit Review</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Reviews Section -->
 <section class="reviews-area pt-120 pb-120">
     <div class="container">
@@ -102,6 +157,15 @@ $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeReviewModal" style="background: linear-gradient(135deg, #007bff, #0056b3); border: none; color: #fff; font-weight: 600; padding: 12px 30px; border-radius: 30px; font-size: 16px; box-shadow: 0 4px 15px rgba(0,123,255,0.3); transition: transform 0.3s, box-shadow 0.3s; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-pen"></i>
+                    Write Your Review
+                </button>
+            </div>
         </div>
 
         <!-- Pagination -->
@@ -206,5 +270,127 @@ $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Initialize modal with a small delay to ensure DOM is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const writeReviewModal = new bootstrap.Modal(document.getElementById('writeReviewModal'));
+        
+        // Add click event to the Write Review button
+        const writeReviewButton = document.querySelector('[data-bs-target="#writeReviewModal"]');
+        if (writeReviewButton) {
+            writeReviewButton.addEventListener('click', function() {
+                writeReviewModal.show();
+            });
+        }
+    }, 100);
+});
+</script>
+
+<script>
+// Rating interaction
+document.addEventListener('DOMContentLoaded', function() {
+    const ratingStars = document.querySelectorAll('.rating-star');
+    const ratingText = document.querySelector('.rating-text');
+    const ratingInputs = document.querySelectorAll('input[name="rating"]');
+    
+    const ratingTexts = {
+        1: "Poor",
+        2: "Fair",
+        3: "Good",
+        4: "Very Good",
+        5: "Excellent"
+    };
+    
+    ratingStars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = this.getAttribute('data-rating');
+            ratingInputs.forEach(input => {
+                if (input.value == rating) {
+                    input.checked = true;
+                }
+            });
+            
+            // Update star colors
+            ratingStars.forEach(s => {
+                const starRating = s.getAttribute('data-rating');
+                const icon = s.querySelector('.rating-icon');
+                if (starRating <= rating) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#ffd700';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '#ddd';
+                }
+            });
+            
+            // Update rating text
+            ratingText.textContent = ratingTexts[rating];
+        });
+        
+        star.addEventListener('mouseenter', function() {
+            const rating = this.getAttribute('data-rating');
+            ratingStars.forEach(s => {
+                const starRating = s.getAttribute('data-rating');
+                const icon = s.querySelector('.rating-icon');
+                if (starRating <= rating) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#ffd700';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '#ddd';
+                }
+            });
+        });
+    });
+    
+    // Reset to original color on mouse leave
+    document.querySelector('.rating-input').addEventListener('mouseleave', function() {
+        const checkedRating = document.querySelector('input[name="rating"]:checked');
+        const rating = checkedRating ? checkedRating.value : 0;
+        
+        ratingStars.forEach(s => {
+            const starRating = s.getAttribute('data-rating');
+            const icon = s.querySelector('.rating-icon');
+            if (starRating <= rating) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                icon.style.color = '#ffd700';
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                icon.style.color = '#ddd';
+            }
+        });
+    });
+    
+    // Character count for review text
+    const reviewText = document.getElementById('review_text');
+    const charCount = document.querySelector('.char-count');
+    
+    if (reviewText && charCount) {
+        reviewText.addEventListener('input', function() {
+            const count = this.value.length;
+            charCount.textContent = count + ' characters';
+            
+            // Change color based on character count
+            if (count > 500) {
+                charCount.style.color = '#dc3545';
+            } else if (count > 300) {
+                charCount.style.color = '#ffc107';
+            } else {
+                charCount.style.color = '#666';
+            }
+        });
+    }
+});
+</script>
 
 <?php require_once 'includes/footer.php'; ?>
