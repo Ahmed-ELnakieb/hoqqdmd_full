@@ -335,7 +335,7 @@ $featured_products = [];
                         <div class="chair-product-top-content">
                             <div class="main-content">
                                 <span class="category">HOK Hack Tools</span>
-                                <h5 class="title"><a href="#">Honor of Kings Ultimate Pack</a></h5>
+                                <h5 class="title"><a href="#">Honor of Kings Full Pack</a></h5>
                             </div>
                             <div class="chair-product-price">
                                 <h5 class="price">$64.99</h5>
@@ -365,7 +365,7 @@ $featured_products = [];
                         <div class="chair-product-top-content">
                             <div class="main-content">
                                 <span class="category">MLBB Hack Tools</span>
-                                <h5 class="title"><a href="#">Mobile Legends Pro Edition</a></h5>
+                                <h5 class="title"><a href="#">Mobile Legends Drone Pack</a></h5>
                             </div>
                             <div class="chair-product-price">
                                 <h5 class="price">$51.99</h5>
@@ -395,7 +395,7 @@ $featured_products = [];
                         <div class="chair-product-top-content">
                             <div class="main-content">
                                 <span class="category">Wild Rift Hack Tools</span>
-                                <h5 class="title"><a href="#">Wild Rift Champion Pack</a></h5>
+                                <h5 class="title"><a href="#">Wild Rift Map Pack</a></h5>
                             </div>
                             <div class="chair-product-price">
                                 <h5 class="price">$58.49</h5>
