@@ -3,11 +3,29 @@
 $page_title = "Home";
 $page_description = "Welcome to HOQQDMD Gaming Platform - Your ultimate destination for gaming tournaments, community, and more.";
 
+// Include database connection
+require_once 'config/database.php';
+
+// Connect to database
+$conn = connectDB();
+
+// Fetch random products from shop_products table
+$random_products_query = "
+    SELECT sp.*, pt.name as type_name, pt.display_name as type_display_name
+    FROM shop_products sp
+    JOIN product_types pt ON sp.type_id = pt.id
+    WHERE sp.is_active = 1
+    ORDER BY RAND()
+    LIMIT 3
+";
+$random_products_result = mysqli_query($conn, $random_products_query);
+$random_products = [];
+while ($row = mysqli_fetch_assoc($random_products_result)) {
+    $random_products[] = $row;
+}
+
 // Include header
 require_once 'includes/header.php';
-
-// For now, we'll use static data instead of database
-$featured_products = [];
 ?>
 
 <!-- slider-area -->
@@ -339,96 +357,132 @@ $featured_products = [];
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="chair-product-item mb-60">
-                    <div class="chair-product-thumb">
-                        <img src="img/product/gaming_chair01.jpg" alt="">
-                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
-                    </div>
-                    <div class="chair-product-content">
-                        <div class="chair-product-top-content">
-                            <div class="main-content">
-                                <span class="category">HOK Hack Tools</span>
-                                <h5 class="title"><a href="#">Honor of Kings Full Pack</a></h5>
+            <?php if (!empty($random_products)): ?>
+                <?php foreach ($random_products as $product): ?>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="chair-product-item mb-60">
+                            <div class="chair-product-thumb">
+                                <img src="img/featured/hack.jpeg" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                                <a href="shop.php?product=<?php echo $product['id']; ?>" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
                             </div>
-                            <div class="chair-product-price">
-                                <h5 class="price">$64.99</h5>
-                                <span class="special-offer">Special Offer 35% Off</span>
-                            </div>
-                        </div>
-                        <div class="chair-product-bottom">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="chair-product-item mb-60">
-                    <div class="chair-product-thumb">
-                        <img src="img/product/gaming_chair02.jpg" alt="">
-                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
-                    </div>
-                    <div class="chair-product-content">
-                        <div class="chair-product-top-content">
-                            <div class="main-content">
-                                <span class="category">MLBB Hack Tools</span>
-                                <h5 class="title"><a href="#">Mobile Legends Drone Pack</a></h5>
-                            </div>
-                            <div class="chair-product-price">
-                                <h5 class="price">$51.99</h5>
-                                <span class="special-offer">Special Offer 35% Off</span>
+                            <div class="chair-product-content">
+                                <div class="chair-product-top-content">
+                                    <div class="main-content">
+                                        <span class="category"><?php echo htmlspecialchars($product['type_display_name'] ?? $product['type_name']); ?></span>
+                                        <h5 class="title"><a href="shop.php?product=<?php echo $product['id']; ?>"><?php echo htmlspecialchars($product['name']); ?></a></h5>
+                                    </div>
+                                    <div class="chair-product-price">
+                                        <h5 class="price">$<?php echo number_format(!empty($product['price_usd']) ? $product['price_usd'] : 0, 2); ?></h5>
+                                        <?php if (!empty($product['discount']) && $product['discount'] > 0): ?>
+                                            <span class="special-offer">Special Offer <?php echo $product['discount']; ?>% Off</span>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="chair-product-bottom">
+                                    <div class="rating">
+                                        <?php for ($i = 1; $i <= 5; $i++): ?>
+                                            <i class="fas fa-star"></i>
+                                        <?php endfor; ?>
+                                    </div>
+                                    <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="chair-product-bottom">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="chair-product-item mb-60">
-                    <div class="chair-product-thumb">
-                        <img src="img/product/gaming_chair03.jpg" alt="">
-                        <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
-                    </div>
-                    <div class="chair-product-content">
-                        <div class="chair-product-top-content">
-                            <div class="main-content">
-                                <span class="category">Wild Rift Hack Tools</span>
-                                <h5 class="title"><a href="#">Wild Rift Map Pack</a></h5>
-                            </div>
-                            <div class="chair-product-price">
-                                <h5 class="price">$58.49</h5>
-                                <span class="special-offer">Special Offer 35% Off</span>
-                            </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <!-- Fallback to static content if no products found -->
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="chair-product-item mb-60">
+                        <div class="chair-product-thumb">
+                            <img src="img/featured/hack.jpeg" alt="">
+                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
                         </div>
-                        <div class="chair-product-bottom">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        <div class="chair-product-content">
+                            <div class="chair-product-top-content">
+                                <div class="main-content">
+                                    <span class="category">HOK Hack Tools</span>
+                                    <h5 class="title"><a href="#">Honor of Kings Full Pack</a></h5>
+                                </div>
+                                <div class="chair-product-price">
+                                    <h5 class="price">$64.99</h5>
+                                    <span class="special-offer">Special Offer 35% Off</span>
+                                </div>
                             </div>
-                            <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                            <div class="chair-product-bottom">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="chair-product-item mb-60">
+                        <div class="chair-product-thumb">
+                            <img src="img/featured/hack.jpeg" alt="">
+                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+                        </div>
+                        <div class="chair-product-content">
+                            <div class="chair-product-top-content">
+                                <div class="main-content">
+                                    <span class="category">MLBB Hack Tools</span>
+                                    <h5 class="title"><a href="#">Mobile Legends Drone Pack</a></h5>
+                                </div>
+                                <div class="chair-product-price">
+                                    <h5 class="price">$51.99</h5>
+                                    <span class="special-offer">Special Offer 35% Off</span>
+                                </div>
+                            </div>
+                            <div class="chair-product-bottom">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="chair-product-item mb-60">
+                        <div class="chair-product-thumb">
+                            <img src="img/featured/hack.jpeg" alt="">
+                            <a href="#" class="cart">Add to cart <i class="fas fa-shopping-basket"></i></a>
+                        </div>
+                        <div class="chair-product-content">
+                            <div class="chair-product-top-content">
+                                <div class="main-content">
+                                    <span class="category">Wild Rift Hack Tools</span>
+                                    <h5 class="title"><a href="#">Wild Rift Map Pack</a></h5>
+                                </div>
+                                <div class="chair-product-price">
+                                    <h5 class="price">$58.49</h5>
+                                    <span class="special-offer">Special Offer 35% Off</span>
+                                </div>
+                            </div>
+                            <div class="chair-product-bottom">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
