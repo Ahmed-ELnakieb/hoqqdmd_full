@@ -149,13 +149,13 @@ require_once 'includes/header.php';
 </section>
 
 <!-- Product Ratings Section -->
-<section class="product-ratings-area pt-120 pb-120">
+<section class="product-ratings-area pt-120 pb-120" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5">
                 <div class="section-title">
-                    <span class="sub-title">Community Ratings</span>
-                    <h2>Honor of Kings <span>Tool Ratings</span></h2>
+                    <span class="sub-title" style="color: #007bff; font-weight: 600;">Community Ratings</span>
+                    <h2 style="color: #333; font-weight: 700;">Honor of Kings <span style="color: #007bff;">Tool Ratings</span></h2>
                 </div>
             </div>
         </div>
@@ -163,45 +163,53 @@ require_once 'includes/header.php';
         <div class="row">
             <!-- Rating Item 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center">
-                    <div class="rating-icon">
-                        <i class="fas fa-crosshairs"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #007bff;">
+                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #007bff, #0056b3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(0,123,255,0.3);">
+                        <i class="fas fa-crosshairs" style="color: #fff; font-size: 28px;"></i>
                     </div>
-                    <h3>4.8/5.0</h3>
-                    <p>Aimbot</p>
+                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
+                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.8/5.0</h3>
+                    </div>
+                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Aimbot</p>
                 </div>
             </div>
 
             <!-- Rating Item 2 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center">
-                    <div class="rating-icon">
-                        <i class="fas fa-eye"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #28a745;">
+                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #28a745, #1e7e34); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(40,167,69,0.3);">
+                        <i class="fas fa-eye" style="color: #fff; font-size: 28px;"></i>
                     </div>
-                    <h3>4.9/5.0</h3>
-                    <p>ESP Hack</p>
+                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
+                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.9/5.0</h3>
+                    </div>
+                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">ESP Hack</p>
                 </div>
             </div>
 
             <!-- Rating Item 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center">
-                    <div class="rating-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #ffc107;">
+                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #ffc107, #e0a800); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(255,193,7,0.3);">
+                        <i class="fas fa-shield-alt" style="color: #fff; font-size: 28px;"></i>
                     </div>
-                    <h3>4.7/5.0</h3>
-                    <p>Anti-Ban</p>
+                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
+                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.7/5.0</h3>
+                    </div>
+                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Anti-Ban</p>
                 </div>
             </div>
 
             <!-- Rating Item 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="rating-item text-center">
-                    <div class="rating-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="rating-item text-center" style="background: #fff; border-radius: 15px; padding: 25px 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #dc3545;">
+                    <div class="rating-icon" style="width: 70px; height: 70px; background: linear-gradient(135deg, #dc3545, #c82333); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; box-shadow: 0 5px 15px rgba(220,53,69,0.3);">
+                        <i class="fas fa-mobile-alt" style="color: #fff; font-size: 28px;"></i>
                     </div>
-                    <h3>4.6/5.0</h3>
-                    <p>Mobile Support</p>
+                    <div class="rating-score" style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 50px; padding: 5px 15px; display: inline-block; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(255,215,0,0.3);">
+                        <h3 style="color: #333; font-weight: 700; margin: 0; font-size: 1.8rem;">4.6/5.0</h3>
+                    </div>
+                    <p style="color: #555; font-weight: 600; font-size: 1.1rem; margin: 0;">Mobile Support</p>
                 </div>
             </div>
         </div>
