@@ -137,7 +137,7 @@ function isLoggedIn() {
                                                 <a href="about.php">About</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'games.php' ? 'active' : ''; ?>">
-                                                <a href="#latest-games-area">Hacks</a>
+                                                <a href="#home-four-area-bg">Hacks</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'community.php' ? 'active' : ''; ?>">
                                                 <a href="community.php">Community</a>
@@ -174,7 +174,7 @@ function isLoggedIn() {
                                         <ul>
                                             <li><a href="home.php">Home</a></li>
                                             <li><a href="about.php">About</a></li>
-                                            <li><a href="#latest-games-area">Hacks</a></li>
+                                            <li><a href="#home-four-area-bg">Hacks</a></li>
                                             <li><a href="community.php">Community</a></li>
                                             <li><a href="tournaments.php">Tournaments</a></li>
                                             <li><a href="shop.php">Store</a></li>

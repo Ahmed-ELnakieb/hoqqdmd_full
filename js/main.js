@@ -1079,6 +1079,11 @@ $(document).ready(function() {
             $('html, body').animate({
                 scrollTop: $(document).height() - $(window).height()
             }, 800, 'swing');
+        } else if (target === '#home-four-area-bg') {
+            // Special handling for home-four-area-bg section
+            $('html, body').animate({
+                scrollTop: $target.offset().top - 80
+            }, 800, 'swing');
         } else if (target) {
             // Scroll to specific section
             $('html, body').animate({

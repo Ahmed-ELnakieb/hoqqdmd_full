@@ -230,7 +230,7 @@ $featured_products = [];
 <!-- gamers-area-end -->
 
 <!-- home-four-area-bg -->
-<div class="home-four-area-bg">
+<div id="home-four-area-bg" class="home-four-area-bg">
     <div class="bg"></div>
     <!-- latest-games-area -->
     <section class="latest-games-area home-four-latest-games pt-120">
