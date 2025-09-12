@@ -5,16 +5,17 @@ require_once 'includes/header.php';
 ?>
 
 <!-- Community Banner -->
-<section class="community-banner-area breadcrumb-bg">
-    <div class="container">
+<section class="community-banner-area breadcrumb-bg" style="background-image: url('http://localhost/hoqqdmd/img/bg/header_background2.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row">
             <div class="col-12">
                 <div class="breadcrumb-content text-center">
-                    <h2>Honor of Kings <span>Community</span></h2>
+                    <h2 style="color: #fff; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Honor of Kings <span style="color: #ffd700;">Community</span></h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="home.php">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Community</li>
+                            <li class="breadcrumb-item"><a href="home.php" style="color: #fff;">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" style="color: #ffd700;">Community</li>
                         </ol>
                     </nav>
                 </div>

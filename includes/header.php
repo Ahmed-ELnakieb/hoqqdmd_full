@@ -152,8 +152,8 @@ function isLoggedIn() {
                                             <a href="home.php"><img src="img/logo/h6_logo.png" alt="Logo" style="width: 120px;"></a>
                                         </div>
                                         <ul class="right">
-                                            <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'tournaments.php' ? 'active' : ''; ?>">
-                                                <a href="tournaments.php">Tournaments</a>
+                                            <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'reviews.php' ? 'active' : ''; ?>">
+                                                <a href="reviews.php">Reviews</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'shop.php' ? 'active' : ''; ?>">
                                                 <a href="shop.php">Store</a>
@@ -181,7 +181,7 @@ function isLoggedIn() {
                                             <li><a href="about.php">About</a></li>
                                             <li><a href="#home-four-area-bg">Hacks</a></li>
                                             <li><a href="community.php">Community</a></li>
-                                            <li><a href="tournaments.php">Tournaments</a></li>
+                                            <li><a href="reviews.php">Reviews</a></li>
                                             <li><a href="shop.php">Store</a></li>
                                             <li><a href="blog.php">Blog</a></li>
                                             <li><a href="#footer">Contact</a></li>

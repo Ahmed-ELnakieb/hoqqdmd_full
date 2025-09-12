@@ -54,7 +54,7 @@
                                 <div class="fw-link">
                                     <ul>
                                         <li><a href="games.php">Games</a></li>
-                                        <li><a href="tournaments.php">Tournaments</a></li>
+                                        <li><a href="reviews.php">Reviews</a></li>
                                         <li><a href="community.php">Community</a></li>
                                         <li><a href="shop.php">Store</a></li>
                                         <li><a href="blog.php">Blog</a></li>
