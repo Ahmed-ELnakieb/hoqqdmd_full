@@ -2,6 +2,31 @@
 $page_title = "Reviews";
 $page_description = "Read and write reviews about Honor of Kings hacks and gaming tools";
 require_once 'includes/header.php';
+require_once 'config/database.php';
+
+// Database connection
+$database = new Database();
+$conn = $database->getConnection();
+
+// Pagination settings
+$reviews_per_page = 3;
+$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+$offset = ($page - 1) * $reviews_per_page;
+
+// Get total number of reviews
+$total_query = "SELECT COUNT(*) FROM user_reviews WHERE status = 'active'";
+$total_stmt = $conn->prepare($total_query);
+$total_stmt->execute();
+$total_reviews = $total_stmt->fetchColumn();
+$total_pages = ceil($total_reviews / $reviews_per_page);
+
+// Get reviews for current page
+$query = "SELECT * FROM user_reviews WHERE status = 'active' ORDER BY review_date DESC LIMIT :limit OFFSET :offset";
+$stmt = $conn->prepare($query);
+$stmt->bindValue(':limit', $reviews_per_page, PDO::PARAM_INT);
+$stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+$stmt->execute();
+$reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!-- Reviews Banner -->
@@ -37,114 +62,80 @@ require_once 'includes/header.php';
         </div>
 
         <div class="row">
-            <!-- Review 1 -->
+            <?php foreach ($reviews as $review): ?>
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="review-item">
                     <div class="review-header">
                         <div class="reviewer-info">
                             <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                                <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=007bff&color=fff&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="https://ui-avatars.com/api/?name=<?php echo urlencode($review['reviewer_name']); ?>&background=<?php echo $review['rating'] >= 4 ? '007bff' : ($review['rating'] >= 3 ? '28a745' : 'ffc107'); ?>&color=<?php echo $review['rating'] >= 4 ? 'fff' : '000'; ?>&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="reviewer-details">
-                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Alex Johnson</h4>
+                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;"><?php echo htmlspecialchars($review['reviewer_name']); ?></h4>
                                 <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
+                                    <?php for ($i = 1; $i <= 5; $i++): ?>
+                                    <i class="fas fa-star<?php echo $i <= $review['rating'] ? '' : '-o'; ?>" style="color: #ffd700; font-size: 16px;"></i>
+                                    <?php endfor; ?>
                                 </div>
                             </div>
                         </div>
                         <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
                             <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
-                            <span>15</span>
-                            <span>Dec</span>
+                            <span><?php echo date('d', strtotime($review['review_date'])); ?></span>
+                            <span><?php echo date('M', strtotime($review['review_date'])); ?></span>
                         </div>
                     </div>
                     <div class="review-content">
-                        <p>"The Honor of Kings hack is incredible! I've been using it for months and it's still undetected. The drone view feature gives me a huge advantage in battle."</p>
-                        <div class="review-product">
-                            <h5>Honor of Kings Pro Hack</h5>
+                        <div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #007bff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <p style="color: #555; font-style: italic; line-height: 1.6; margin: 0; position: relative;">
+                                <i class="fas fa-quote-left" style="position: absolute; top: -10px; left: 10px; font-size: 24px; color: #007bff; opacity: 0.2;"></i>
+                                <?php echo htmlspecialchars($review['review_text']); ?>
+                            </p>
+                        </div>
+                        <div class="review-product" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 8px; padding: 12px; border-left: 4px solid #ffd700; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-shield-alt" style="color: #007bff; font-size: 20px;"></i>
+                                <h5 style="color: #007bff; font-weight: 600; margin: 0;"><?php echo htmlspecialchars($review['product_name']); ?></h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Review 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="review-item">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                                <img src="https://ui-avatars.com/api/?name=Sarah+Miller&background=28a745&color=fff&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div class="reviewer-details">
-                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Sarah Miller</h4>
-                                <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="far fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
-                            <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-                    <div class="review-content">
-                        <p>"Great hack with excellent features. The ESP is very accurate and helps me spot enemies easily. Customer support is also very responsive."</p>
-                        <div class="review-product">
-                            <h5>Honor of Kings ESP Hack</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="review-item">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <div class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                                <img src="https://ui-avatars.com/api/?name=Mike+Chen&background=ffc107&color=000&size=60" alt="Reviewer" style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div class="reviewer-details">
-                                <h4 style="color: #fff; font-weight: 600; margin-bottom: 8px;">Mike Chen</h4>
-                                <div class="rating" style="display: flex; gap: 3px; margin-bottom: 10px;">
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                    <i class="fas fa-star" style="color: #ffd700; font-size: 16px;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-date" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 8px 15px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
-                            <i class="far fa-calendar-alt" style="color: #ffd700;"></i>
-                            <span>05</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-                    <div class="review-content">
-                        <p>"Best hack I've ever used! The aimbot is incredibly smooth and the auto headshot feature is a game-changer. Highly recommend to anyone looking to dominate."</p>
-                        <div class="review-product">
-                            <h5>Honor of Kings Aimbot</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
 
+        <!-- Pagination -->
+        <?php if ($total_pages > 1): ?>
         <div class="row mt-5">
-            <div class="col-lg-12 text-center">
-                <a href="write-review.php" class="btn btn-primary">Write Your Review</a>
+            <div class="col-lg-12">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <?php if ($page > 1): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?php echo $page - 1; ?>" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <?php endif; ?>
+
+                        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                        <li class="page-item <?php echo $i == $page ? 'active' : ''; ?>">
+                            <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                        </li>
+                        <?php endfor; ?>
+
+                        <?php if ($page < $total_pages): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?php echo $page + 1; ?>" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        <?php endif; ?>
+                    </ul>
+                </nav>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </section>
 

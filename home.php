@@ -440,7 +440,7 @@ $featured_products = [];
         <div class="row align-items-center">
             <div class="col-xl-8 col-lg-7">
                 <div class="chair-discount-img">
-                    <img src="img/featured/main.png" alt="">
+                    <img src="img/featured/main.jpg" alt="">
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5">
