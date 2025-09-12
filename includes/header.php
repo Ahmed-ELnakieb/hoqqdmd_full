@@ -82,10 +82,10 @@ function isLoggedIn() {
                             <div class="header-top-social">
                                 <ul>
                                     <li>Follow</li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://t.me/hoqqdmdhack" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                                    <li><a href="https://chat.whatsapp.com/JYHU6uidE4N3uwgUY1i6Fo" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
                                 </ul>
                             </div>
                         </div>

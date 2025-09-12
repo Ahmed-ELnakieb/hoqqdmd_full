@@ -330,7 +330,7 @@ main {
 <div class="page-header">
     <div class="container">
         <h1 class="page-title">Pricing</h1>
-        <p class="page-subtitle">Choose the perfect plan for your gaming needs. All plans include instant activation and 24/7 support.</p>
+        <p class="page-subtitle">Choose the perfect plan for your Honor of kings Hack. All plans include instant activation and 24/7 support.</p>
         
         <!-- Product Type Toggle -->
         <div class="billing-toggle">
@@ -594,20 +594,73 @@ function openContactModal(productPlan) {
     const telegramLink = document.getElementById('modal-telegram-link');
     const whatsappLink = document.getElementById('modal-whatsapp-link');
     
-    // Create product-specific messages
-    const productNames = {
-        'drone-initial': 'Drone View (Initial Payment)',
-        'drone-update': 'Drone View (Season Update)',
-        'map-3d': 'Map Hack (3 Days)',
-        'map-7d': 'Map Hack (7 Days)',
-        'map-14d': 'Map Hack (14 Days)',
-        'full-3d': 'Full Mod Menu (3 Days)',
-        'full-7d': 'Full Mod Menu (7 Days)',
-        'full-31d': 'Full Mod Menu (31 Days)'
+    // Create detailed product information
+    const productDetails = {
+        'drone-initial': {
+            hackType: 'Drone View',
+            period: 'Initial Payment',
+            price: '$10 or 50 BRL',
+            features: 'Full drone view access, Instant activation, Setup assistance, 24/7 support'
+        },
+        'drone-update': {
+            hackType: 'Drone View',
+            period: 'Season Update',
+            price: '$7 or 35 BRL (70% of initial)',
+            features: 'Each season restart, Major game updates, Continued support, Renewal pricing'
+        },
+        'map-3d': {
+            hackType: 'Map Hack',
+            period: '3 Days',
+            price: '$5 or 30 BRL',
+            features: 'Complete map visibility, Enemy tracking, Instant activation, Professional support'
+        },
+        'map-7d': {
+            hackType: 'Map Hack',
+            period: '7 Days',
+            price: '$10 or 65 BRL',
+            features: 'Complete map visibility, Enemy tracking, Priority support, Custom configurations'
+        },
+        'map-14d': {
+            hackType: 'Map Hack',
+            period: '14 Days',
+            price: '$14 or 100 BRL',
+            features: 'Complete map visibility, Enemy tracking, VIP support, Custom setup, Free minor updates'
+        },
+        'full-3d': {
+            hackType: 'Full Mod Menu',
+            period: '3 Days',
+            price: '$5 or 30 BRL',
+            features: 'Complete mod menu, Map hack, Drone view, All advanced features, Professional support'
+        },
+        'full-7d': {
+            hackType: 'Full Mod Menu',
+            period: '7 Days',
+            price: '$10 or 65 BRL',
+            features: 'Complete mod menu, All advanced features, Priority support, Custom configurations'
+        },
+        'full-31d': {
+            hackType: 'Full Mod Menu',
+            period: '31 Days',
+            price: '$30 or 185 BRL',
+            features: 'Complete mod menu, All advanced features, Premium VIP support, All updates included, Personal assistance, Best value'
+        }
     };
     
-    const productName = productNames[productPlan] || 'HOK Gaming Tools';
-    const message = `Hello! I'm interested in purchasing the '${productName}' plan. Can you please help me with the purchase process?`;
+    const details = productDetails[productPlan];
+    if (!details) return;
+    
+    // Create detailed message
+    const message = `🎮 Hello! I want to subscribe to HOK Hack!
+
+📋 Plan Details:
+• Hack Type: ${details.hackType}
+• Period: ${details.period}
+• Price: ${details.price}
+
+✨ Features:
+${details.features}
+
+Please help me with the purchase process and activation. Thank you! 🚀`;
     
     // Update contact links with pre-filled messages
     const telegramMessage = encodeURIComponent(message);
