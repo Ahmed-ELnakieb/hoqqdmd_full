@@ -61,6 +61,11 @@ function isLoggedIn() {
                 background: #333;
                 text-decoration: none;
             }
+            .disabled-btn {
+                opacity: 0.5;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
         </style>
     </head>
     <body>
@@ -109,9 +114,9 @@ function isLoggedIn() {
                                     </div>
                                 <?php else: ?>
                                     <ul>
-                                        <li><a href="register.php"><i class="far fa-edit"></i>Register</a></li>
+                                        <li><a href="#" class="disabled-btn" disabled><i class="far fa-edit"></i>Register</a></li>
                                         <li class="or">or</li>
-                                        <li><a href="login.php"><i class="far fa-edit"></i>Sign in</a></li>
+                                        <li><a href="#" class="disabled-btn" disabled><i class="far fa-edit"></i>Sign in</a></li>
                                     </ul>
                                 <?php endif; ?>
                             </div>
