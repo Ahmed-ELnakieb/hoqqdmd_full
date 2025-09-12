@@ -126,7 +126,7 @@ function isLoggedIn() {
                             <div class="main-menu menu-style-two">
                                 <nav>
                                     <div class="logo d-block d-lg-none">
-                                        <a href="home.php"><img src="img/logo/logo.png" alt="Logo"></a>
+                                        <a href="home.php"><img src="img/logo/logo.png" style="width: 80px;" alt="Logo"></a>
                                     </div>
                                     <div class="navbar-wrap d-none d-lg-flex">
                                         <ul class="left">

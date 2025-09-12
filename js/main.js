@@ -401,7 +401,7 @@ $('.product-active').slick({
     =    		Product Active		      =
 =============================================*/
 $('.game-episodes-active').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 1000,
   autoplay: false,
@@ -543,7 +543,7 @@ $('.released-game-active').slick({
 	slidesToScroll: 1,
 	arrows: false,
 	fade: true,
-	dots: true,
+	dots: false,
 	asNavFor: '.released-game-nav',
 	responsive: [
 		{
@@ -815,7 +815,7 @@ $('.community-news-active').slick({
 	 =        Home Seven Active      =
 =============================================*/
 $('.h-seven-slider-active').slick({
-	dots: true,
+	dots: false,
 	infinite: true,
 	speed: 50,
 	autoplay: false,
