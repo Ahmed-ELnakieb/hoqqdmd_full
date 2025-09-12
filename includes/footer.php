@@ -123,7 +123,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="copyright-text">
-                                <p>Copyright © <?php echo date('Y'); ?> <a href="home.php">HOQQDMD</a> All Rights Reserved.</p>
+                                <p>Copyright © <?php echo date('Y'); ?> <a href="mailto:ahmedelnkaieb95@gmail.com" target="_blank">ELNAKIEB</a> All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-md-block">
