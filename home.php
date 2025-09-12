@@ -81,7 +81,8 @@ $featured_products = [];
             <div class="col-lg-6 col-md-9">
                 <div class="latest-collection-item mb-30">
                     <div class="lc-item-thumb">
-                        <a href="shop.php"><img src="img/product/latest_collection01.jpg" alt=""></a>
+                        <div class="lc-thumb-overlay"></div>
+                        <a href="shop.php"><img src="img/categories/hok-bg2.png" alt=""></a>
                     </div>
                     <div class="lc-item-content">
                         <h4>Latest Collection</h4>
@@ -93,7 +94,8 @@ $featured_products = [];
             <div class="col-lg-6 col-md-9">
                 <div class="latest-collection-item mb-30">
                     <div class="lc-item-thumb">
-                        <a href="shop.php?category=bestsellers"><img src="img/product/latest_collection02.jpg" alt=""></a>
+                        <div class="lc-thumb-overlay"></div>
+                        <a href="shop.php?category=bestsellers"><img src="img/categories/hok-bg.jpg" alt=""></a>
                     </div>
                     <div class="lc-item-content">
                         <h4>Best Selling Items</h4>
