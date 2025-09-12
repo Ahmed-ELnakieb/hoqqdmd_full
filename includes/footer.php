@@ -40,8 +40,8 @@
                                     <div class="footer-contact">
                                         <ul>
                                             <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>123 Gaming Street, New York, NY 10001</li>
-                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+1 234 567 8900</li>
-                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@hoqqdmd.com</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>93 98130-8889</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>ganmoprohok@gmail.com</li>
                                         </ul>
                                     </div>
                                 </div>
