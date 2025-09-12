@@ -1063,5 +1063,30 @@ function wowAnimation() {
 	wow.init();
 }
 
+/*=============================================
+    =    		 Smooth Scrolling for Links   =
+=============================================*/
+$(document).ready(function() {
+	// Smooth scrolling for anchor links
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        var target = this.hash;
+        var $target = $(target);
+        
+        if (target === '#footer') {
+            // Scroll to bottom of page for footer
+            $('html, body').animate({
+                scrollTop: $(document).height() - $(window).height()
+            }, 800, 'swing');
+        } else if (target) {
+            // Scroll to specific section
+            $('html, body').animate({
+                scrollTop: $target.offset().top - 80
+            }, 800, 'swing');
+        }
+    });
+});
+
 
 })(jQuery);

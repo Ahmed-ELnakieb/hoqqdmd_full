@@ -137,7 +137,7 @@ function isLoggedIn() {
                                                 <a href="about.php">About</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'games.php' ? 'active' : ''; ?>">
-                                                <a href="games.php">Games</a>
+                                                <a href="#latest-games-area">Hacks</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'community.php' ? 'active' : ''; ?>">
                                                 <a href="community.php">Community</a>
@@ -157,7 +157,7 @@ function isLoggedIn() {
                                                 <a href="blog.php">Blog</a>
                                             </li>
                                             <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">
-                                                <a href="contact.php">Contact</a>
+                                                <a href="#footer">Contact</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -174,12 +174,12 @@ function isLoggedIn() {
                                         <ul>
                                             <li><a href="home.php">Home</a></li>
                                             <li><a href="about.php">About</a></li>
-                                            <li><a href="games.php">Games</a></li>
+                                            <li><a href="#latest-games-area">Hacks</a></li>
                                             <li><a href="community.php">Community</a></li>
                                             <li><a href="tournaments.php">Tournaments</a></li>
                                             <li><a href="shop.php">Store</a></li>
                                             <li><a href="blog.php">Blog</a></li>
-                                            <li><a href="contact.php">Contact</a></li>
+                                            <li><a href="#footer">Contact</a></li>
                                         </ul>
                                     </div>
                                 </nav>
