@@ -266,7 +266,7 @@ require_once 'includes/header.php';
                     <div class="latest-games-active owl-carousel">
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/perimum-hack/1.jpeg" alt=""></a>
+                                                            <a href="#"><img src="img/perimum-hack/1.jpeg" alt="" class="preview-img"></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
@@ -278,7 +278,7 @@ require_once 'includes/header.php';
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/perimum-hack/2.jpeg" alt=""></a>
+                                                            <a href="#"><img src="img/perimum-hack/2.jpeg" alt="" class="preview-img"></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
@@ -290,7 +290,7 @@ require_once 'includes/header.php';
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/perimum-hack/3.jpeg" alt=""></a>
+                                                            <a href="#"><img src="img/perimum-hack/3.jpeg" alt="" class="preview-img"></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
@@ -302,7 +302,7 @@ require_once 'includes/header.php';
                         </div>
                         <div class="latest-games-items mb-30">
                             <div class="latest-games-thumb">
-                                <a href="#"><img src="img/perimum-hack/4.jpeg" alt=""></a>
+                                                            <a href="#"><img src="img/perimum-hack/4.jpeg" alt="" class="preview-img"></a>
                             </div>
                             <div class="latest-games-content">
                                 <div class="lg-tag">
@@ -345,6 +345,33 @@ require_once 'includes/header.php';
 
 </div>
 <!-- home-four-area-bg-end -->
+
+<!-- Image Preview Modal -->
+<div id="imgModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;z-index:9999;">
+    <span id="closeModal" style="position:absolute;top:30px;right:40px;font-size:40px;color:#fff;cursor:pointer;">&times;</span>
+    <img id="modalImg" src="" style="max-width:90vw;max-height:80vh;border-radius:10px;">
+</div>
+
+<script>
+document.querySelectorAll('.preview-img').forEach(function(img) {
+    img.onclick = function(e) {
+        e.preventDefault();
+        document.getElementById('modalImg').src = this.src;
+        document.getElementById('imgModal').style.display = 'flex';
+    };
+});
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('imgModal').style.display = 'none';
+};
+document.getElementById('imgModal').onclick = function(e) {
+    if (e.target === this) this.style.display = 'none';
+};
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.getElementById('imgModal').style.display = 'none';
+    }
+});
+</script>
 
 <!-- chair-product-area -->
 <section class="chair-product-area">
