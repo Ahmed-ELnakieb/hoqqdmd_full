@@ -26,7 +26,7 @@ DELIMITER $$
 -- Procedures
 --
 DROP PROCEDURE IF EXISTS `generate_sample_keys`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `generate_sample_keys` ()   BEGIN
+CREATE PROCEDURE `generate_sample_keys` ()   BEGIN
     DECLARE i INT DEFAULT 0;
     DECLARE key_val VARCHAR(50);
     
@@ -56,7 +56,7 @@ END$$
 -- Functions
 --
 DROP FUNCTION IF EXISTS `generate_license_key`$$
-CREATE DEFINER=`root`@`localhost` FUNCTION `generate_license_key` () RETURNS VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci DETERMINISTIC BEGIN
+CREATE FUNCTION `generate_license_key` () RETURNS VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci DETERMINISTIC BEGIN
     DECLARE chars VARCHAR(62) DEFAULT 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     DECLARE result VARCHAR(50) DEFAULT '';
     DECLARE i INT DEFAULT 0;
